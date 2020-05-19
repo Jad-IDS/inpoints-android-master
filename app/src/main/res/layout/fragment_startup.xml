@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/second_margin"
+                android:layout_marginTop="@dimen/big_margin"
+                android:layout_marginRight="@dimen/second_margin"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_40"
+                    android:orientation="horizontal">
+
+                <EditText
+                        android:id="@+id/etSearchStartup"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/gray_medium"
+                        android:hint="@string/search_startup"
+                        android:paddingStart="@dimen/second_margin"
+                        android:paddingLeft="@dimen/second_margin"
+                        android:textSize="@dimen/font" />
+
+                <ImageView
+                        android:id="@+id/btClearSearch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_medium"
+                        android:gravity="center_vertical"
+                        android:paddingRight="@dimen/mini_margin"
+                        android:src="@drawable/ic_close"
+                        android:visibility="gone"/>
+
+                <LinearLayout
+                        android:id="@+id/btSearchStartups"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@drawable/right_corners_secondary_filled"
+                        android:gravity="center">
+
+                    <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/search" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/btAddStartup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/normal_margin"
+                    android:orientation="vertical">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_40"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/rectangular_secondary"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:orientation="horizontal">
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                        <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/ic_add"
+                                android:tint="@color/white" />
+
+                        <com.ids.inpoint.custom.CustomTextViewMedium
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/add_new_startup"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/medium_font" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/llAddStartup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/normal_margin"
+                    android:background="@drawable/rectangular_gray"
+                    android:orientation="vertical"
+                    android:padding="@dimen/second_margin"
+                    android:visibility="gone"
+                    >
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_40"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/mini_margin">
+
+                    <LinearLayout
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:background="@color/white_trans"
+                            android:gravity="center">
+
+                        <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:background="@color/white_trans"
+                                android:src="@drawable/sponsors_secondary" />
+                    </LinearLayout>
+
+                    <EditText
+                            android:id="@+id/etStartupName"
+                            android:inputType="textNoSuggestions"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@color/white_trans"
+                            android:hint="@string/startup_name"
+                            android:textSize="@dimen/font" />
+
+                    <ImageView
+                            android:id="@+id/btClear"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@color/white_trans"
+                            android:gravity="center_vertical"
+                            android:paddingRight="@dimen/mini_margin"
+                            android:src="@drawable/ic_close"
+                            android:visibility="gone"/>
+
+                    <com.ids.inpoint.custom.CustomTextViewMedium
+                            android:id="@+id/tvStartupType"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@color/white_trans"
+                            android:gravity="center_vertical"
+                            android:paddingRight="@dimen/small_margin"
+                            android:text="@string/public_view"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/large_font" />
+
+                    <LinearLayout
+                            android:id="@+id/btPrivate"
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:background="@drawable/right_corners_secondary_filled"
+                            android:gravity="center">
+
+                        <ImageView
+                                android:id="@+id/ivPrivate"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/visibility_on_white" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/normal_margin"
+                        android:gravity="end"
+                        android:orientation="horizontal">
+
+                    <LinearLayout
+                            android:id="@+id/btCancel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/height_35"
+                            android:layout_marginEnd="@dimen/normal_margin"
+                            android:background="@drawable/rectangular_secondary_border"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingStart="@dimen/big_margin"
+                            android:paddingEnd="@dimen/big_margin">
+
+                        <com.ids.inpoint.custom.CustomTextViewMedium
+                                android:id="@+id/tvItemStartupAction"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/cancel"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="@dimen/font_small" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:id="@+id/btSave"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/height_35"
+                            android:background="@drawable/rectangular_secondary"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingStart="@dimen/big_margin"
+                            android:paddingEnd="@dimen/big_margin">
+
+                        <com.ids.inpoint.custom.CustomTextViewMedium
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/save"
+                                android:textColor="@color/white_trans"
+                                android:textSize="@dimen/font_small" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                    android:id="@+id/srlTeams"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <android.support.v4.widget.NestedScrollView
+                            android:id="@+id/svTeams"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:focusableInTouchMode="true"
+                                android:orientation="vertical">
+
+                            <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/rvTeams"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="@dimen/normal_margin"
+                                    android:layout_marginBottom="@dimen/second_margin"
+                                    android:nestedScrollingEnabled="false" />
+
+                        </LinearLayout>
+
+                    </android.support.v4.widget.NestedScrollView>
+
+                </RelativeLayout>
+
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/loading_trans" />
+
+    </RelativeLayout>
+
+</LinearLayout>

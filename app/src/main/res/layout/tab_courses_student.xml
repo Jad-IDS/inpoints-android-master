@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:id="@+id/tab_student"
+        android:visibility="gone"
+        android:paddingTop="@dimen/second_margin"
+        android:orientation="vertical"
+>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+    >
+
+        <com.ids.inpoint.custom.CustomTextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary"
+                android:text="@string/course_rating"
+                android:layout_marginStart="@dimen/normal_margin"
+                android:layout_marginLeft="@dimen/normal_margin"
+                android:id="@+id/tvStudentsCount"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/font"
+
+        />
+
+
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="end"
+                      android:gravity="end"
+        >
+            <com.ids.inpoint.custom.CustomTextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/secondary"
+            />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rvStudents"
+            android:nestedScrollingEnabled="false"
+            android:layout_marginTop="@dimen/second_margin"
+            android:layout_marginBottom="@dimen/second_margin"
+
+    />
+
+</LinearLayout>

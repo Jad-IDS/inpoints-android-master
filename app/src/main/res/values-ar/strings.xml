@@ -1,0 +1,351 @@
+<resources>
+    <!--    Keys    &   Fixed    -->
+    <string name="key_language_code" translatable="false">key_language_code</string>
+    <string name="key_show_notifications" translatable="false">key_show_notifications</string>
+    <!--    -->
+    <string name="f_arabic" translatable="false">عربي</string>
+    <string name="f_english" translatable="false">English</string>
+    <!--    Keys    -->
+
+    <string name="app_name">Inpoint</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="about">حول</string>
+
+    <string name="points">النقاط</string>
+    <string name="level">المستوى</string>
+    <string name="badges">الشارات</string>
+    <string name="see_all">عرض الكل</string>
+    <string name="followers">المتابعين</string>
+    <string name="like">اعجاب</string>
+    <string name="likes">اعجابات</string>
+    <string name="comment">تعليق</string>
+    <string name="verify">تأكيد</string>
+    <string name="write_a_comment">اضافة تعليق</string>
+    <string name="write_a_post">كتابة منشور</string>
+    <string name="comments">تعليقات</string>
+    <string name="reply">اضافة رد</string>
+    <string name="share">نشر</string>
+    <string name="permission_not_allowed">يجب عليك تمكين إذن للوصول</string>
+    <string name="photo">صور</string>
+    <string name="phone">رقم الهاتف</string>
+    <string name="video">فيديو</string>
+    <string name="event">الأحداث</string>
+    <string name="check_in">Check in</string>
+    <string name="feedback">Feedback</string>
+    <string name="live">Live</string>
+    <string name="post">اضافة</string>
+    <string name="course_name">اسم الدورة :</string>
+    <string name="take_course">أخذ دورة</string>
+    <string name="about_instructor">حول المدرب:</string>
+    <string name="more_details">المزيد</string>
+    <string name="introduction">المقدمة</string>
+    <string name="outline">المخطط التفصيلي</string>
+    <string name="review">التقييم</string>
+    <string name="student">الطلاب</string>
+    <string name="about_judegement">عن الحكم</string>
+    <string name="course_rating">تصنيف الدورة التدريبية</string>
+    <string name="events">الأحداث</string>
+    <string name="create_event">اضافة حدث</string>
+    <string name="select">لفئة</string>
+    <string name="search_by_title_or_by_author_name">البحث عن طريق العنوان أو عن طريق اسم المؤلف</string>
+    <string name="show_less">القليل</string>
+    <string name="resources_funding">المصادر/التمويل</string>
+    <string name="resources">المصادر</string>
+    <string name="funding">التمويل</string>
+    <string name="sponsor">ممول</string>
+    <string name="unsponsor">عدم التمويل</string>
+    <string name="sort_by_category">الترتيب حسب الفئة</string>
+    <string name="participate">مشاركة</string>
+    <string name="replies">ردود</string>
+    <string name="GOOGLE_API_KEY">AIzaSyBcjKpWU_vPU1DX0-hUjv4VUjNhQOMl_UM</string>
+    <string name="media_url_mp4">http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4
+    </string>
+    <string name="login">تسجيل دخول</string>
+    <string name="education_and_work">التعليم والعمل</string>
+    <string name="profile_info">المعلومات الشخصية</string>
+    <string name="public_view">عام</string>
+    <string name="private_view">خاص</string>
+    <string name="dialog_ok">موافق</string>
+    <string name="delete">حذف</string>
+    <string name="create_an_event">اضافة حدث</string>
+    <string name="title">ادخل العنوان</string>
+    <string name="post_hint">عن ماذا تريد أن تتحدث؟</string>
+    <string name="location">المكان...</string>
+    <string name="details">التفاصيل...</string>
+
+    <string name="select_category">اختر الفئة</string>
+    <string name="select_types">اختر النوع</string>
+    <string name="clear_filter">مسح الفلتر</string>
+    <string name="apply">تطبيق</string>
+    <string name="youtube">يوتيوب</string>
+    <string name="vimeo">فيميو</string>
+
+    <string name="type_needed">حاجة</string>
+    <string name="type_completed">الانتهاء</string>
+
+    <string name="partners">الشركاء</string>
+    <string name="organaization">منظمة</string>
+    <string name="fundation">التمويل</string>
+
+    <string name="dates">الاوقات</string>
+    <string name="date">التوقيت</string>
+    <string name="website">الموقع الالكتروني</string>
+    <string name="description">الوصف</string>
+    <string name="amount">الكمية</string>
+    <string name="type">نوع</string>
+
+    <string name="from_date">من تاريخ</string>
+    <string name="to_date">الى تاريخ</string>
+    <string name="from_time">من وقت</string>
+    <string name="to_time">الى وقت</string>
+    <string name="notification">الإشعارات</string>
+    <string name="by">بواسطة :</string>
+    <string name="lessons">الدروس</string>
+    <string name="preview">المعاينة</string>
+
+
+    <string name="tab_users">المستخدمون</string>
+    <string name="tab_companies">الشركات</string>
+    <string name="tab_teams">الفرق</string>
+    <string name="tab_startups">الشركات الناشئة</string>
+    <string name="tab_post">المشاركات</string>
+    <string name="tab_event">الأحداث</string>
+    <string name="my_teams">فرقي</string>
+    <string name="all_teams">كل الفرق</string>
+    <string name="search_teams">البحث عن فرق</string>
+    <string name="add_new_team">إضافة فريق جديد</string>
+    <string name="join_team">انضم إلى الفريق</string>
+    <string name="delete_team">حذف الفريق</string>
+    <string name="view_team">عرض الفريق</string>
+    <string name="view_requests">عرض الطلبات</string>
+    <string name="pending">قيد الانتظار</string>
+    <string name="cancel">إلغاء</string>
+    <string name="team_name">اسم الفريق</string>
+    <string name="public_team">عام</string>
+    <string name="private_team">خاص</string>
+    <string name="save">حفظ</string>
+    <string name="team_name_is_required">اسم الفريق مطلوب</string>
+    <string name="team_creation_failed">فشل إنشاء الفريق</string>
+    <string name="team_created">خلق فريق</string>
+    <string name="members">الأعضاء </string>
+    <string name="team_members">أعضاء الفريق</string>
+    <string name="admin">مدير</string>
+    <string name="level_colon">المستوى:</string>
+    <string name="active">نشط</string>
+    <string name="member_name">اسم العضو</string>
+    <string name="action_plan">خطة العمل</string>
+    <string name="tasks">المهام</string>
+    <string name="projects">المشاريع</string>
+    <string name="files">الملفات</string>
+    <string name="messages">المحادثات</string>
+    <string name="name_code">الاسم \ n الرمز</string>
+    <string name="type_client">نوع \n عميل</string>
+    <string name="sde_date">تاريخ البدءe \n تاريخ الانتهاء \n تاريخ الاستحقاق</string>
+    <string name="actions">تدابير</string>
+
+    <string name="name_predecessor">اسم  \n السلف</string>
+    <string name="estimated_hour">الساعات المقدرة</string>
+
+
+    <string name="save_changes">حفظ التعديلات</string>
+    <string name="size">الحجم</string>
+
+
+    <string name="yes">نعم</string>
+    <string name="no">كلا</string>
+    <string name="users">المستخدمون</string>
+    <string name="user_is_required">المستخدم مطلوب</string>
+    <string name="name_required">الاسم *</string>
+    <string name="code">الرمز</string>
+    <string name="summary_required">ملخص *</string>
+    <string name="start_date_required">تاريخ البدء *</string>
+    <string name="due_date_required">تاريخ الاستحقاق *</string>
+    <string name="end_date_required">تاريخ الانتهاء *</string>
+    <string name="new_project">مشروع جديد</string>
+    <string name="client">الزبون</string>
+    <string name="end_date">تاريخ الانتهاء</string>
+    <string name="fill_required_fields">يرجى ملء جميع الحقول المطلوبة</string>
+    <string name="project_creation_failed">فشل إنشاء المشروع</string>
+    <string name="version">النسخة</string>
+    <string name="settings">الاعدادات</string>
+    <string name="language">اللغة</string>
+    <string name="notifications">الإشعارات</string>
+
+    <string name="delete_post_verification">هل أنت متأكد من أنك تريد حذف المنشور؟</string>
+    <string name="delete_commnent_verification">هل أنت متأكد أنك تريد حذف التعليق؟</string>
+    <string name="new_task">مهمة جديدة</string>
+    <string name="edit_project">تعديل مشروع</string>
+    <string name="status_required">الحالة *</string>
+    <string name="predecessor">السلف</string>
+    <string name="project">المشروع</string>
+    <string name="none">لا شيء</string>
+    <string name="estimated_hours">الساعات المقدرة</string>
+    <string name="quite">مغادرة</string>
+
+    <string name="follow">متابعة</string>
+    <string name="unfollow">عدم المتابعة</string>
+    <string name="team">الفريق</string>
+    <string name="notes">الملاحظات</string>
+    <string name="select_members">اختر الأعضاء</string>
+    <string name="assigned_to_required">معين إلى *</string>
+    <string name="task_creation_failed">فشل إنشاء المهمة</string>
+    <string name="edit_task">تحرير المهمة</string>
+    <string name="education">التربية</string>
+    <string name="work">عمل</string>
+    <string name="certifications">الشهادات</string>
+    <string name="school_required">المدرسة *</string>
+    <string name="description_required">الوصف *</string>
+    <string name="grade">درجة</string>
+    <string name="activities">الأنشطة</string>
+    <string name="company_required">شركة *</string>
+    <string name="position_required">الموقف *</string>
+    <string name="from_required">من *</string>
+    <string name="to">إلى</string>
+    <string name="certification">شهادة</string>
+    <string name="present">الحالي</string>
+
+    <string name="signup">انشاء حساب</string>
+    <string name="forgot_your_password">نسيت رمز مرورك؟</string>
+    <string name="password">رمز المرور</string>
+    <string name="sign_up">انشاء حساب</string>
+    <string name="person">شخص</string>
+    <string name="company">شركة</string>
+    <string name="delete_confirmation">هل أنت متأكد أنك تريد الحذف؟</string>
+    <string name="name">الاسم</string>
+    <string name="mm_dd_yyyy">شهر / يوم / سنة</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="become_a_member">اصبح عضوا</string>
+    <string name="reset_password">إعادة تعيين كلمة المرور</string>
+    <string name="username">اسم المستخدم</string>
+    <string name="level_1">المستوى:</string>
+    <string name="take_photo">التقط صورة</string>
+    <string name="choose_gallery">اختر من المعرض</string>
+    <string name="choose_your_profile">اختر صورة ملفك الشخصي</string>
+    <string name="std_applied">طلاب</string>
+    <string name="remove_course">إزالة الدورة</string>
+    <string name="register">تسجيل</string>
+    <string name="file_name_required">الرجاء إدخال اسم الملف</string>
+    <string name="pick_file">يرجى اختيار ملف</string>
+    <string name="enter_file_desc">الرجاء إدخال وصف الملف</string>
+    <string name="cannot_delete_file">لا يمكنك حذف هذا الملف</string>
+    <string name="permission_denied">تم رفض الإذن</string>
+    <string name="download_failed">أخفق التنزيل ، يجب السماح بالتخزين</string>
+    <string name="downloading">تحميل ...</string>
+    <string name="download_complete">اكتمل التنزيل</string>
+    <string name="choose_audio">اختيار صوت</string>
+    <string name="choose_video">اختيار فيديو</string>
+    <string name="choose_other_file">اختيار ملف آخر</string>
+    <string name="choose_profile_pic">اختر صورة ملفك الشخصي</string>
+    <string name="unable_to_pick">غير قادر على اختيار الملف</string>
+    <string name="failed">فشل</string>
+    <string name="delete_confirm_member">هل أنت متأكد أنك تريد حذف عضو الفريق هذا؟</string>
+    <string name="cannot_del_proj">لا يمكنك حذف هذا المشروع</string>
+    <string name="confirm_accept_request">هل أنت متأكد أنك تريد قبول الطلب؟</string>
+    <string name="confirm_delete_request">هل أنت متأكد أنك تريد حذف الطلب؟</string>
+    <string name="cannot_del_task">لا يمكنك حذف هذه المهمة</string>
+    <string name="logout">تسجيل خروج</string>
+    <string name="check_empty_fields">يرجى التحقق من الحقول الفارغة</string>
+    <string name="enter_valid_email">يرجى إدخال بريد إلكتروني صحيح</string>
+    <string name="enter_event_title">الرجاء إدخال عنوان الحدث</string>
+    <string name="enter_location">الرجاء إدخال الموقع</string>
+    <string name="enter_partner">الرجاء إدخال الشركاء</string>
+    <string name="enter_resources">الرجاء إدخال الموارد</string>
+    <string name="enter_funding">الرجاء إدخال التمويل</string>
+    <string name="enter_organizers">الرجاء إدخال المنظمين</string>
+    <string name="enter_dates">الرجاء إدخال التواريخ</string>
+    <string name="cannot_delete_image">لا يمكن اختيار الصورة</string>
+    <string name="enter_description">الرجاء إدخال الوصف</string>
+    <string name="enter_video_link">الرجاء إدخال رابط الفيديو</string>
+    <string name="cannot_pick_image">لا يمكن اختيار الصورة</string>
+    <string name="edited_successfully">تم التعديل بنجاح</string>
+    <string name="added_successfully">اضيف بنجاح</string>
+    <string name="enter_email">الرجاء إدخال البريد الإلكتروني</string>
+    <string name="check_new_pass">يرجى التحقق من كلمة المرور الجديدة</string>
+    <string name="password_updated">تم تحديث كلمة السر</string>
+    <string name="allow_permission_image">يجب أن تسمح إذن لاختيار الصورة</string>
+    <string name="choose_bg_pic">اختيار صورة الخلفية الخاصة بك</string>
+    <string name="online_courses">الدورات عبر الإنترنت</string>
+    <string name="publications">المنشورات</string>
+    <string name="course_code">رمز الدورة </string>
+    <string name="duration">المدة</string>
+    <string name="choose_your_file">إختر الملف</string>
+
+    <string name="show_more">المزيد</string>
+    <string name="edit_post">تعديل المنشور</string>
+    <string name="delete_post">حذف المنشور</string>
+    <string name="male">ذكر</string>
+    <string name="female">أنثى</string>
+    <string name="try_again">يرجى المحاولة مرة أخرى</string>
+    <string name="latest">آخر</string>
+    <string name="categories">الفئات</string>
+    <string name="send_a_message">إرسال رسالة</string>
+    <string name="enter_username">من فضلك ادخل اسم المستخدم</string>
+    <string name="enter_password">من فضلك ادخل كلمة المرور</string>
+    <string name="report">أبلغ</string>
+    <string name="problem">Problem</string>
+    <string name="reason">Reason</string>
+    <string name="enter_reason">Please enter the reason</string>
+    <string name="enter_post_info">Please enter post info</string>
+    <string name="funding_needed">Funding needed</string>
+    <string name="funding_completed">Funding completed</string>
+    <string name="search_startup">Search startup</string>
+    <string name="add_new_startup">Add new startup</string>
+    <string name="startup_name">Startup name</string>
+
+    <string name="startup_name_is_required">Startup name is required</string>
+    <string name="startup_creation_failed">Startup creation failed</string>
+
+    <string name="join_startup">Join startup</string>
+    <string name="delete_startup">Delete startup</string>
+    <string name="view_startup">View startup</string>
+    <string name="interested">Interested</string>
+    <string name="startup_members">Startup members</string>
+    <string name="product_and_services">Product and services</string>
+    <string name="branches">Branches</string>
+    <string name="reviews">Reviews</string>
+    <string name="publish_date">Publish Date</string>
+    <string name="source">Source</string>
+    <string name="creation_date">Creation Date</string>
+    <string name="course">Course</string>
+    <string name="lesson">Lesson</string>
+    <string name="tags">Tags</string>
+    <string name="authors">Authors</string>
+    <string name="write_a_review">Write a review</string>
+    <string name="no_publication_for_this_course_yet">No publication for this course yet</string>
+    <string name="bio">Bio</string>
+    <string name="industry">Industry</string>
+    <string name="founded">Founded</string>
+    <string name="city">City</string>
+    <string name="speciality">Speciality</string>
+    <string name="address">Address</string>
+    <string name="company_size">Company Size</string>
+    <string name="work_experience">work experience</string>
+    <string name="overview">Overview</string>
+    <string name="product">Product</string>
+    <string name="branch">Branch</string>
+    <string name="opening_hour">Opening Hour</string>
+    <string name="investors">Investors</string>
+    <string name="location1">Location</string>
+    <string name="day">Day</string>
+
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+
+    <string name="enter_investor">Please enter Investor</string>
+    <string name="enter_sponsors">Please enter Sponsor</string>
+    <string name="show_phone_number_to_all_users">Show phone number to all users</string>
+    <string name="add_social_media">Add social media</string>
+    <string name="social_media">Social media</string>
+    <string name="link">link</string>
+    <string name="enter_link">Please enter link</string>
+    <string name="lesson_name">Lesson name</string>
+    <string name="edit_team_info">Edit Team Info</string>
+    <string name="cannot_update_verified_post">Cannot update verified post</string>
+</resources>

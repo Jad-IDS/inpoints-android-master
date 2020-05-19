@@ -1,0 +1,938 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:clickable="true"
+        android:orientation="vertical"
+>
+
+    <include layout="@layout/toolbar_general"/>
+    <include layout="@layout/loading"/>
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical"
+                      android:background="@color/gray_light"
+                      android:layout_marginTop="@dimen/normal_margin"
+                      android:layout_marginLeft="@dimen/second_margin"
+                      android:layout_marginRight="@dimen/second_margin"
+                      android:padding="@dimen/normal_margin"
+        >
+
+            <android.support.v4.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/scroll"
+                    android:scrollbars="none"
+            >
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                >
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                    >
+
+                        <ImageView
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:src="@drawable/profile"
+                                android:id="@+id/ivUserProfile"
+
+                        />
+
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="32dp"
+                                android:background="@drawable/rounded_corner_white"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/second_margin"
+                                android:id="@+id/linearPrivacy"
+                                android:layout_marginStart="@dimen/second_margin"
+                                android:orientation="horizontal"
+                                android:gravity="center_vertical"
+                        >
+
+                            <ImageView
+                                    android:layout_width="12dp"
+                                    android:layout_height="12dp"
+                                    android:src="@drawable/ic_public"
+                                    android:visibility="gone"
+                                    android:layout_marginLeft="@dimen/second_margin"
+                                    android:layout_marginRight="@dimen/second_margin"
+
+                            />
+
+                            <com.ids.inpoint.custom.CustomTextViewMedium
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:id="@+id/tvPrivacySelected"
+                                    android:textSize="@dimen/font_too_small"
+
+                            />
+                            <LinearLayout android:layout_width="wrap_content"
+                                          android:layout_height="wrap_content"
+                                          android:layout_gravity="center_vertical"
+                                          android:gravity="end"
+                            >
+                                <ImageView
+                                        android:layout_width="12dp"
+                                        android:layout_height="12dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="@dimen/second_margin"
+                                        android:layout_marginRight="@dimen/second_margin"
+                                        android:src="@drawable/arrow_down"
+                                />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="32dp"
+                                android:background="@drawable/rounded_corner_white"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/second_margin"
+                                android:layout_marginRight="@dimen/second_margin"
+                                android:id="@+id/linearUsersSpinner"
+
+                                android:orientation="horizontal"
+                                android:gravity="center_vertical"
+                        >
+
+
+
+                            <com.ids.inpoint.custom.CustomTextViewMedium
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:padding="@dimen/mini_margin"
+                                    android:id="@+id/tvUserSelected"
+                                    android:textSize="@dimen/font_too_small"
+
+                            />
+                            <LinearLayout android:layout_width="wrap_content"
+                                          android:layout_height="wrap_content"
+                                          android:layout_gravity="center_vertical"
+                                          android:gravity="end"
+                            >
+                                <ImageView
+                                        android:layout_width="12dp"
+                                        android:layout_height="12dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="@dimen/normal_margin"
+                                        android:layout_marginRight="@dimen/normal_margin"
+                                        android:src="@drawable/arrow_down"
+                                />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+
+
+                        <LinearLayout android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:layout_gravity="center_vertical"
+                                      android:gravity="center_vertical"
+                                      android:orientation="vertical"
+                                      android:id="@+id/linearPublic"
+
+                        >
+                            <CheckBox
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:scaleType="centerInside"
+                                    android:id="@+id/cbPublic"
+                                    android:text="@string/public_view"
+                            />
+                            <com.ids.inpoint.custom.CustomTextViewMedium
+                                    android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="Public"
+                                    android:textSize="@dimen/font_too_small"
+                                    android:layout_marginTop="@dimen/mini_margin"
+                                    android:textColor="@color/secondary"
+
+                            />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="@dimen/big_margin"
+                            android:textAlignment="viewStart"
+                            android:textSize="@dimen/font"
+                            android:background="@drawable/rectangular_post_dark"
+                            android:gravity="start"
+                            android:padding="10dp"
+                            android:id="@+id/etPostTitle"
+                            android:hint="@string/title"
+
+                    />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="@dimen/normal_margin"
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/font"
+                        android:background="@drawable/rectangular_post_dark"
+                        android:gravity="start"
+                        android:padding="10dp"
+                        android:id="@+id/etLocation"
+                        android:hint="@string/location"
+
+                />
+
+
+                    <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:layout_marginTop="@dimen/normal_margin"
+                            android:textAlignment="viewStart"
+                            android:textSize="@dimen/font"
+                            android:background="@drawable/rectangular_post_dark"
+                            android:gravity="start"
+                            android:padding="10dp"
+                            android:id="@+id/etDetails"
+                            android:hint="@string/details"
+
+                    />
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="300dp"
+                                  android:visibility="gone"
+                    >
+
+
+                        <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="300dp"
+                                android:id="@+id/ivSelectedImage"
+                                android:visibility="gone"
+                                android:layout_marginTop="@dimen/normal_margin"
+                        />
+                    </LinearLayout>
+                    <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="@dimen/normal_margin"
+                            android:visibility="gone"
+
+                            android:background="@color/gray_medium"/>
+
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="@dimen/big_margin"
+                    >
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="35dp"
+                                android:padding="@dimen/normal_margin"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:id="@+id/linearPhoto"
+                                android:layout_marginRight="@dimen/small_margin"
+                                android:layout_marginEnd="@dimen/small_margin"
+                                android:background="@drawable/rectangular_post_dark"
+                                android:layout_weight="1">
+
+                            <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:src="@drawable/photo"
+                                    android:tint="@color/secondary"
+
+                            />
+
+                            <com.ids.inpoint.custom.CustomTextViewMedium
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/photo"
+                                    android:textSize="@dimen/font"
+                                    android:layout_gravity="center_vertical"
+                                    android:gravity="center_vertical"
+                                    android:layout_marginLeft="@dimen/normal_margin"
+                                    android:layout_marginStart="@dimen/normal_margin"
+                            />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="35dp"
+                                android:padding="@dimen/normal_margin"
+                                android:id="@+id/linearVideo"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/mini_margin"
+                                android:layout_marginRight="@dimen/mini_margin"
+                                android:gravity="center_vertical"
+                                android:background="@drawable/rectangular_post_dark"
+                                android:layout_weight="1">
+
+                            <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:src="@drawable/video"
+                                    android:tint="@color/secondary"
+
+                            />
+
+                            <com.ids.inpoint.custom.CustomTextViewMedium
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/video"
+                                    android:textSize="@dimen/font"
+                                    android:layout_gravity="center_vertical"
+                                    android:gravity="center_vertical"
+                                    android:layout_marginLeft="@dimen/normal_margin"
+                                    android:layout_marginStart="@dimen/normal_margin"
+                            />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="gone"
+                            android:layout_marginTop="@dimen/normal_margin"
+                    >
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="45dp"
+                                android:padding="@dimen/normal_margin"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:layout_marginRight="@dimen/small_margin"
+                                android:layout_marginEnd="@dimen/small_margin"
+                                android:background="@drawable/rectangular_post_button"
+                                android:layout_weight="1">
+
+                            <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:src="@drawable/location"
+
+
+                            />
+
+                            <com.ids.inpoint.custom.CustomTextViewMedium
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/check_in"
+                                    android:textSize="@dimen/font"
+                                    android:layout_gravity="center_vertical"
+                                    android:gravity="center_vertical"
+                                    android:layout_marginLeft="@dimen/normal_margin"
+                                    android:layout_marginStart="@dimen/normal_margin"
+                            />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="45dp"
+                                android:padding="@dimen/normal_margin"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/mini_margin"
+                                android:layout_marginRight="@dimen/mini_margin"
+                                android:gravity="center_vertical"
+                                android:background="@drawable/rectangular_post_button"
+                                android:layout_weight="1">
+
+                            <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:src="@drawable/comment"
+
+
+                            />
+
+                            <com.ids.inpoint.custom.CustomTextViewMedium
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/feedback"
+                                    android:textSize="@dimen/font"
+                                    android:layout_gravity="center_vertical"
+                                    android:gravity="center_vertical"
+                                    android:layout_marginLeft="@dimen/normal_margin"
+                                    android:layout_marginStart="@dimen/normal_margin"
+                            />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="45dp"
+                                android:padding="@dimen/normal_margin"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/small_margin"
+                                android:layout_marginStart="@dimen/small_margin"
+                                android:background="@drawable/rectangular_post_button"
+                                android:layout_weight="1">
+
+                            <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:src="@drawable/video"
+                                    android:tint="@color/secondary"
+
+                            />
+
+                            <com.ids.inpoint.custom.CustomTextViewMedium
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/live"
+                                    android:textSize="@dimen/font"
+                                    android:layout_gravity="center_vertical"
+                                    android:gravity="center_vertical"
+                                    android:layout_marginLeft="@dimen/normal_margin"
+                                    android:layout_marginStart="@dimen/normal_margin"
+                            />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <android.support.v7.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rvMediaImages"
+                            android:visibility="gone"
+                            android:layout_marginTop="@dimen/big_margin"
+                    />
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/linearVideoLinks"
+                            android:visibility="gone"
+                            android:layout_marginTop="@dimen/normal_margin"
+                            android:orientation="vertical">
+
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="@dimen/normal_margin"
+                        >
+                            <RelativeLayout
+                                    android:layout_width="100dp"
+                                    android:layout_height="40dp"
+                                    android:background="@drawable/bg_recangular_border_gray">
+                                <Spinner
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:id="@+id/spVideoType"
+
+                                        style="@style/Widget.AppCompat.DropDownItem.Spinner"
+                                />
+                            </RelativeLayout>
+                            <EditText
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/bg_recangular_border_gray"
+                                    android:hint="Enter video link"
+                                    android:id="@+id/etVideoUrl"
+                                    android:layout_marginLeft="@dimen/normal_margin"
+                                    android:layout_marginRight="@dimen/normal_margin"
+                                    android:paddingLeft="@dimen/normal_margin"
+                                    android:paddingStart="@dimen/normal_margin"
+
+                            />
+
+                            <LinearLayout
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:background="@drawable/rectangular_secondary"
+                                    android:layout_gravity="center"
+                                    android:id="@+id/btAddVideo"
+                                    android:gravity="center"
+                            >
+                                <ImageView
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/icon_upload"
+                                        android:layout_gravity="center"
+
+                                />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <android.support.v7.widget.RecyclerView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/normal_margin"
+                                android:id="@+id/rvVideoLinks"
+                        />
+
+
+
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout android:layout_width="match_parent"
+                                 android:layout_height="40dp"
+                                 android:orientation="horizontal"
+                                 android:layout_gravity="center"
+                                 android:gravity="center"
+                                  android:id="@+id/linearPartners"
+                                 android:paddingLeft="@dimen/normal_margin"
+                                 android:paddingRight="@dimen/normal_margin"
+                                 android:background="@color/gray_medium"
+                                 android:layout_marginTop="@dimen/big_margin"
+
+                   >
+
+
+                       <com.ids.inpoint.custom.CustomTextViewBold
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:textSize="@dimen/font"
+                               android:text="@string/partners"
+                               android:textColor="@color/primary"
+                       />
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_gravity="center_vertical"
+                                  android:gravity="end"
+                    >
+
+                        <LinearLayout
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/circle_secondary"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                        >
+                            <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                     android:src="@drawable/ic_add"
+                            />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                   </LinearLayout>
+                    <android.support.v7.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rvPartners"
+                            android:visibility="gone"
+                            android:layout_marginRight="@dimen/normal_margin"
+                            android:layout_marginLeft="@dimen/normal_margin"
+                    />
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="40dp"
+                                  android:orientation="horizontal"
+                                  android:layout_gravity="center"
+                                  android:gravity="center"
+                                  android:id="@+id/linearOrganization"
+                                  android:paddingLeft="@dimen/normal_margin"
+                                  android:paddingRight="@dimen/normal_margin"
+                                  android:background="@color/gray_medium"
+                                  android:layout_marginTop="@dimen/normal_margin"
+
+                    >
+
+
+                        <com.ids.inpoint.custom.CustomTextViewBold
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/font"
+                                android:text="@string/organaization"
+                                android:textColor="@color/primary"
+                        />
+
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:layout_height="wrap_content"
+                                      android:layout_gravity="center_vertical"
+                                      android:gravity="end"
+                        >
+
+                            <LinearLayout
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:background="@drawable/circle_secondary"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                            >
+                                <ImageView
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:src="@drawable/ic_add"
+                                />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+                    <android.support.v7.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rvOrganization"
+                            android:visibility="gone"
+                            android:layout_marginRight="@dimen/normal_margin"
+                            android:layout_marginLeft="@dimen/normal_margin"
+                    />
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="40dp"
+                                  android:orientation="horizontal"
+                                  android:layout_gravity="center"
+                                  android:gravity="center"
+                                  android:id="@+id/linearFundation"
+                                  android:paddingLeft="@dimen/normal_margin"
+                                  android:paddingRight="@dimen/normal_margin"
+                                  android:background="@color/gray_medium"
+                                  android:layout_marginTop="@dimen/normal_margin"
+
+                    >
+
+
+                        <com.ids.inpoint.custom.CustomTextViewBold
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/font"
+                                android:text="@string/fundation"
+                                android:textColor="@color/primary"
+                        />
+
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:layout_height="wrap_content"
+                                      android:layout_gravity="center_vertical"
+                                      android:gravity="end"
+                        >
+
+                            <LinearLayout
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:background="@drawable/circle_secondary"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                            >
+                                <ImageView
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:src="@drawable/ic_add"
+                                />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+                    <android.support.v7.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rvFundation"
+                            android:visibility="gone"
+                            android:layout_marginRight="@dimen/normal_margin"
+                            android:layout_marginLeft="@dimen/normal_margin"
+                    />
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="40dp"
+                                  android:orientation="horizontal"
+                                  android:layout_gravity="center"
+                                  android:gravity="center"
+                                  android:id="@+id/linearResources"
+                                  android:paddingLeft="@dimen/normal_margin"
+                                  android:paddingRight="@dimen/normal_margin"
+                                  android:background="@color/gray_medium"
+                                  android:layout_marginTop="@dimen/normal_margin"
+
+                    >
+
+
+                        <com.ids.inpoint.custom.CustomTextViewBold
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/font"
+                                android:text="@string/resources"
+                                android:textColor="@color/primary"
+                        />
+
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:layout_height="wrap_content"
+                                      android:layout_gravity="center_vertical"
+                                      android:gravity="end"
+                        >
+
+                            <LinearLayout
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:background="@drawable/circle_secondary"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                            >
+                                <ImageView
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:src="@drawable/ic_add"
+                                />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+                    <android.support.v7.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rvResources"
+                            android:visibility="gone"
+                            android:layout_marginRight="@dimen/normal_margin"
+                            android:layout_marginLeft="@dimen/normal_margin"
+                    />
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="40dp"
+                                  android:orientation="horizontal"
+                                  android:layout_gravity="center"
+                                  android:gravity="center"
+                                  android:id="@+id/linearDates"
+                                  android:paddingLeft="@dimen/normal_margin"
+                                  android:paddingRight="@dimen/normal_margin"
+                                  android:background="@color/gray_medium"
+                                  android:layout_marginTop="@dimen/normal_margin"
+
+                    >
+
+
+                        <com.ids.inpoint.custom.CustomTextViewBold
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/font"
+                                android:text="@string/dates"
+                                android:textColor="@color/primary"
+                        />
+
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:layout_height="wrap_content"
+                                      android:layout_gravity="center_vertical"
+                                      android:gravity="end"
+                        >
+
+                            <LinearLayout
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:background="@drawable/circle_secondary"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                            >
+                                <ImageView
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:src="@drawable/ic_add"
+                                />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+                    <android.support.v7.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rvDates"
+                            android:visibility="gone"
+                            android:layout_marginRight="@dimen/normal_margin"
+                            android:layout_marginLeft="@dimen/normal_margin"
+                    />
+
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/rectangular_secondary"
+                            android:paddingLeft="30dp"
+                            android:paddingRight="30dp"
+                            android:id="@+id/btAdd"
+                            android:orientation="vertical"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_marginTop="@dimen/big_margin"
+                            android:layout_marginBottom="@dimen/big_margin"
+
+                    >
+                        <com.ids.inpoint.custom.CustomTextViewBold
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/font"
+                                android:text="@string/save_changes"
+                                android:layout_gravity="center"
+
+                                android:gravity="center"
+                                android:textColor="@color/white"
+
+                        />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+            </android.support.v4.widget.NestedScrollView>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="44dp"
+                android:layout_marginLeft="@dimen/second_margin"
+                android:layout_marginRight="@dimen/second_margin"
+                android:padding="@dimen/normal_margin"
+        >
+
+
+
+            <View
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:visibility="invisible"
+
+            />
+
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_corner_white"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/second_margin"
+                    android:id="@+id/linearRvPostPrivacy"
+                    android:layout_marginStart="@dimen/second_margin"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+            >
+
+                <android.support.v7.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:background="@color/white"
+                        android:visibility="gone"
+                        android:id="@+id/rvPostPrivacy"
+                        android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_corner_white"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/second_margin"
+                    android:layout_marginRight="@dimen/second_margin"
+                    android:id="@+id/linearRvUsers"
+
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+            >
+
+
+                <android.support.v7.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:background="@color/white"
+                        android:visibility="gone"
+
+                        android:id="@+id/rvUsers"
+                        android:layout_height="wrap_content"/>
+
+
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout android:layout_width="30dp"
+                          android:layout_height="30dp"
+                          android:visibility="invisible"
+                          android:layout_gravity="center_vertical"
+                          android:gravity="center_vertical"
+
+            />
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+        <include layout="@layout/loading_trans"/>
+    </RelativeLayout>
+
+</LinearLayout>

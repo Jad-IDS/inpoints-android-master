@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             android:layout_width="match_parent"
+                                             android:orientation="vertical"
+                                             android:layout_marginTop="@dimen/normal_margin"
+                                             android:layout_height="wrap_content">
+
+
+    <com.ids.inpoint.custom.CustomTextViewMedium
+            android:layout_width="wrap_content"
+            android:layout_gravity="start"
+            android:gravity="start"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font"
+            android:id="@+id/ctvTextPost"
+
+
+    />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/linearImages"
+            android:orientation="vertical">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:id="@+id/linearImageTop"
+                android:orientation="horizontal">
+
+
+            <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/rlImagePost"
+                    android:layout_marginTop="@dimen/normal_margin"
+            >
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:id="@+id/ivImagePost"
+
+
+                />
+
+
+                <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/simpleExoPlayerView"
+                        android:visibility="gone"
+
+                />
+
+                <FrameLayout
+                        android:id="@+id/youtube_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+
+                        android:visibility="visible"
+                >
+                    <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="50dp"
+
+                            android:layout_gravity="center"
+                            android:src="@drawable/youtube_placeholder"
+                            android:scaleType="centerCrop"
+                    />
+                </FrameLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rlImagePost2"
+                    android:layout_marginTop="@dimen/normal_margin"
+                    android:layout_weight="1">
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:scaleType="centerCrop"
+                        android:id="@+id/ivImagePost2"
+
+
+                />
+
+
+                <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/simpleExoPlayerView2"
+                        android:visibility="gone"
+
+                />
+
+                <FrameLayout
+                        android:id="@+id/youtube_layout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_medium"
+
+                        android:layout_centerHorizontal="true"
+                        android:visibility="visible" >
+                    <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/youtube_placeholder"
+                            android:scaleType="centerCrop"
+                    />
+                </FrameLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:id="@+id/linearImageBottom"
+
+                android:orientation="horizontal">
+
+            <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rlImagePost3"
+                    android:layout_marginTop="@dimen/normal_margin"
+                    android:layout_weight="1">
+                <ImageView
+                        android:layout_width="match_parent"
+
+                        android:layout_height="match_parent"
+
+                        android:scaleType="centerCrop"
+                        android:id="@+id/ivImagePost3"
+
+
+                />
+
+
+                <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/simpleExoPlayerView3"
+                        android:visibility="gone"
+
+                />
+
+                <FrameLayout
+                        android:id="@+id/youtube_layout3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_medium"
+                        android:layout_centerHorizontal="true"
+                        android:visibility="visible"  >
+                    <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/youtube_placeholder"
+                            android:scaleType="centerCrop"
+                    />
+                </FrameLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rlImagePost4"
+                    android:layout_marginTop="@dimen/normal_margin"
+                    android:layout_weight="1">
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:scaleType="centerCrop"
+                        android:id="@+id/ivImagePost4"
+
+
+                />
+
+
+                <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/simpleExoPlayerView4"
+                        android:visibility="gone"
+
+                />
+
+                <FrameLayout
+                        android:id="@+id/youtube_layout4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_medium"
+                        android:layout_centerHorizontal="true"
+                        android:visibility="visible"  >
+                    <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/youtube_placeholder"
+                            android:scaleType="centerCrop"
+                    />
+                </FrameLayout>
+
+
+                <com.ids.inpoint.custom.CustomTextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom|end"
+                        android:padding="@dimen/normal_margin"
+                        android:id="@+id/tvMoreMedia"
+                        android:visibility="gone"
+                        android:background="@color/shadow_black"
+                        android:text="+4"
+                        android:textColor="@color/white"
+                        android:textSize="28sp"
+                        />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

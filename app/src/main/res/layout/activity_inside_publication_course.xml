@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        >
+
+    <include layout="@layout/toolbar_general"/>
+    <include layout="@layout/loading"/>
+
+    <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/big_margin"
+                android:layout_marginLeft="@dimen/second_margin"
+                android:layout_marginRight="@dimen/second_margin"
+                >
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangular_gray"
+                    android:orientation="vertical"
+                    android:padding="@dimen/normal_margin"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    >
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:gravity="start"
+                        android:orientation="horizontal"
+                        >
+                    <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="@dimen/normal_margin"
+                            android:layout_marginRight="@dimen/normal_margin"
+                            android:src="@drawable/course_name"
+
+                            />
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/small_margin"
+                            android:orientation="vertical">
+
+
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                            <com.ids.inpoint.custom.CustomTextViewBold
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/primary"
+                                    android:text="@string/title"
+                                    android:textSize="@dimen/font"
+
+                                    />
+
+                            <com.ids.inpoint.custom.CustomTextViewBold
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/font"
+                                    android:textColor="@color/secondary"
+                                    android:id="@+id/tvTitleValue"
+                                    android:layout_marginLeft="@dimen/mini_margin"
+                                    android:layout_marginStart="@dimen/mini_margin"
+                                    />
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/mini_margin"
+                                android:orientation="horizontal">
+
+                            <com.ids.inpoint.custom.CustomTextViewBold
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/primary"
+                                    android:text="@string/publish_date"
+                                    android:textSize="@dimen/font"
+
+                                    />
+
+                            <com.ids.inpoint.custom.CustomTextViewBold
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/font"
+                                    android:textColor="@color/secondary"
+                                    android:id="@+id/tvPublishDateValue"
+                                    android:layout_marginLeft="@dimen/mini_margin"
+                                    android:layout_marginStart="@dimen/mini_margin"
+                                    />
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/mini_margin"
+                                android:orientation="horizontal">
+
+                            <com.ids.inpoint.custom.CustomTextViewBold
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/primary"
+                                    android:text="@string/source"
+                                    android:textSize="@dimen/font"
+
+                                    />
+
+                            <com.ids.inpoint.custom.CustomTextViewBold
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/font"
+                                    android:textColor="@color/secondary"
+                                    android:id="@+id/tvSourceValue"
+                                    android:layout_marginLeft="@dimen/mini_margin"
+                                    android:layout_marginStart="@dimen/mini_margin"
+                                    />
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/mini_margin"
+                                android:orientation="horizontal">
+
+                            <com.ids.inpoint.custom.CustomTextViewBold
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/primary"
+                                    android:text="@string/creation_date"
+                                    android:textSize="@dimen/font"
+
+                                    />
+
+                            <com.ids.inpoint.custom.CustomTextViewBold
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/font"
+                                    android:textColor="@color/secondary"
+                                    android:id="@+id/tvCreationDateValue"
+                                    android:layout_marginLeft="@dimen/mini_margin"
+                                    android:layout_marginStart="@dimen/mini_margin"
+                                    />
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/mini_margin"
+                                android:orientation="horizontal">
+
+                            <com.ids.inpoint.custom.CustomTextViewBold
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/primary"
+                                    android:text="@string/course"
+                                    android:textSize="@dimen/font"
+
+                                    />
+
+                            <com.ids.inpoint.custom.CustomTextViewBold
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/font"
+                                    android:textColor="@color/secondary"
+                                    android:id="@+id/tvCourseValue"
+                                    android:layout_marginLeft="@dimen/mini_margin"
+                                    android:layout_marginStart="@dimen/mini_margin"
+                                    />
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/mini_margin"
+                                android:orientation="horizontal">
+
+                            <com.ids.inpoint.custom.CustomTextViewBold
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/primary"
+                                    android:text="@string/lesson"
+                                    android:textSize="@dimen/font"
+
+                                    />
+
+                            <com.ids.inpoint.custom.CustomTextViewBold
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/font"
+                                    android:textColor="@color/secondary"
+                                    android:id="@+id/tvLessonValue"
+                                    android:layout_marginLeft="@dimen/mini_margin"
+                                    android:layout_marginStart="@dimen/mini_margin"
+                                    />
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+          </LinearLayout>
+
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangular_gray"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/normal_margin"
+                android:padding="@dimen/normal_margin"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                >
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    >
+                <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="@dimen/normal_margin"
+                        android:layout_marginRight="@dimen/normal_margin"
+                        android:src="@drawable/course_name"
+
+                        />
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                    <com.ids.inpoint.custom.CustomTextViewBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/primary"
+                            android:text="@string/categories"
+                            android:textSize="@dimen/font"
+
+                            />
+
+                    <com.ids.inpoint.custom.CustomTextViewBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/font"
+                            android:textColor="@color/secondary"
+                            android:id="@+id/tvCategoriesValue"
+                            android:text="XML"
+                            android:layout_marginLeft="@dimen/mini_margin"
+                            android:layout_marginStart="@dimen/mini_margin"
+                            />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangular_gray"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/normal_margin"
+                    android:padding="@dimen/normal_margin"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    >
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        >
+                    <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="@dimen/normal_margin"
+                            android:layout_marginRight="@dimen/normal_margin"
+                            android:src="@drawable/course_name"
+
+                            />
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        <com.ids.inpoint.custom.CustomTextViewBold
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/primary"
+                                android:text="@string/tags"
+                                android:textSize="@dimen/font"
+
+                                />
+
+                        <com.ids.inpoint.custom.CustomTextViewBold
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/font"
+                                android:textColor="@color/secondary"
+                                android:id="@+id/tvTagsValue"
+                                android:text="XML"
+                                android:layout_marginLeft="@dimen/mini_margin"
+                                android:layout_marginStart="@dimen/mini_margin"
+                                />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangular_gray"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/normal_margin"
+                    android:padding="@dimen/normal_margin"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    >
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        >
+                    <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="@dimen/normal_margin"
+                            android:layout_marginRight="@dimen/normal_margin"
+                            android:src="@drawable/course_name"
+
+                            />
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        <com.ids.inpoint.custom.CustomTextViewBold
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/primary"
+                                android:text="@string/authors"
+                                android:textSize="@dimen/font"
+
+                                />
+
+                        <com.ids.inpoint.custom.CustomTextViewBold
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/font"
+                                android:textColor="@color/secondary"
+                                android:id="@+id/tvAuthorValue"
+                                android:text="Author 1"
+                                android:layout_marginLeft="@dimen/mini_margin"
+                                android:layout_marginStart="@dimen/mini_margin"
+                                />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/rectangular_secondary_border"
+                    android:layout_marginTop="@dimen/second_margin"
+                    >
+                <Button
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/font"
+                        android:id="@+id/btIntro"
+                        android:textAllCaps="false"
+                        android:background="@drawable/left_corners_secondary_filled"
+                        android:textColor="@color/white_trans"
+                        android:text="@string/introduction"
+                        />
+
+                <Button
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/font"
+                        android:textAllCaps="false"
+                        android:id="@+id/btMedia"
+                        android:background="@drawable/right_border_secondary"
+                        android:text="Lesson's Media"
+                        />
+
+
+
+
+            </LinearLayout>
+
+
+            <include layout="@layout/tab_courses_introduction"/>
+            <include layout="@layout/tab_media"/>
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="@drawable/rectangular_gray"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/normal_margin"
+        android:layout_marginLeft="@dimen/normal_margin"
+        android:layout_marginRight="@dimen/normal_margin"
+>
+    
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="@dimen/normal_margin"
+            android:scaleType="centerCrop"
+            android:src="@drawable/placeholder"
+            android:id="@+id/ivElearning"
+    />
+
+    <com.ids.inpoint.custom.CustomTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Test"
+            android:id="@+id/tvElearningTitle"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/normal_margin"
+            android:textSize="@dimen/font"
+            android:textColor="@color/primary"
+    />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/linearBy"
+    >
+    <com.ids.inpoint.custom.CustomTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/by"
+            android:textSize="@dimen/font_small"
+            android:textColor="@color/gray_dark"
+            android:layout_gravity="center"
+            android:gravity="center"
+
+    />
+    <com.ids.inpoint.custom.CustomTextViewMedium
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/tvElearningBy"
+            android:textSize="@dimen/font_small"
+            android:layout_marginLeft="@dimen/mini_margin"
+            android:layout_marginStart="@dimen/mini_margin"
+            android:text="lorem ipsum"
+    />
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rectangular_primary"
+            android:layout_marginTop="@dimen/normal_margin"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+    >
+               <com.ids.inpoint.custom.CustomTextViewMedium
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:gravity="center"
+                       android:id="@+id/tvElearningInfo"
+                       android:textColor="@color/white"
+                       android:text="lorem ipsum lorem"
+               />
+    </LinearLayout>
+
+
+</LinearLayout>

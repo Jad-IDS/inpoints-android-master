@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/small_margin"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/mini_margin"
+                android:orientation="horizontal">
+
+            <com.ids.inpoint.custom.CustomTextViewBold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:layout_weight="1"
+                    android:padding="@dimen/normal_margin"
+                    android:textColor="@color/primary"
+                    android:text="@string/review"
+                    android:textSize="@dimen/large_font"
+                    android:textStyle="bold" />
+
+            <ImageView
+                    android:id="@+id/btClose"
+                    android:layout_width="@dimen/height_25"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end|center_vertical"
+                    android:padding="@dimen/small_margin"
+                    android:src="@drawable/close" />
+
+        </LinearLayout>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_dark" />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+            <RatingBar
+                    android:id="@+id/rbCourse"
+                    android:scaleX="0.8"
+                    android:layout_gravity="center"
+                    android:scaleY="0.8"
+
+
+                    android:progressDrawable="@drawable/my_rating_display"
+                    android:stepSize="1"
+                    android:numStars="5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <com.ids.inpoint.custom.CustomTextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/normal_margin"
+                    android:layout_marginLeft="@dimen/normal_margin"
+                    android:layout_marginTop="@dimen/normal_margin"
+                    android:text="@string/review"
+                    android:textColor="@color/gray_dark"
+                    android:textSize="@dimen/font" />
+
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="start"
+                    android:background="@drawable/bg_recangular_border_gray"
+                    android:gravity="start"
+                    android:layout_marginLeft="@dimen/normal_margin"
+                    android:layout_marginTop="@dimen/normal_margin"
+                    android:id="@+id/etReview"
+                    android:layout_marginRight="@dimen/normal_margin"
+                    android:paddingLeft="@dimen/normal_margin"
+                    android:paddingStart="@dimen/normal_margin"
+                    android:paddingTop="@dimen/normal_margin"
+                    android:textSize="@dimen/font" />
+
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/normal_margin"
+                android:gravity="end"
+
+                android:orientation="horizontal">
+
+            <LinearLayout
+                    android:id="@+id/btCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_35"
+                    android:layout_marginEnd="@dimen/normal_margin"
+                    android:background="@drawable/rectangular_secondary_border"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/big_margin"
+                    android:paddingEnd="@dimen/big_margin">
+
+                <com.ids.inpoint.custom.CustomTextViewMedium
+                        android:id="@+id/tvItemTeamAction"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cancel"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/font_small" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/btSave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_35"
+                    android:background="@drawable/rectangular_secondary"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/big_margin"
+                    android:paddingEnd="@dimen/big_margin">
+
+                <com.ids.inpoint.custom.CustomTextViewMedium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/save"
+                        android:textColor="@color/white_trans"
+                        android:textSize="@dimen/font_small" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

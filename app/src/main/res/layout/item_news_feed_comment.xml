@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/normal_margin"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+
+    >
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLikers"
+                android:orientation="horizontal">
+
+
+
+        <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/like_white"
+                android:padding="4dp"
+                android:background="@drawable/circle_secondary"
+
+        />
+
+        <com.ids.inpoint.custom.CustomTextViewMedium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:textSize="@dimen/font_small"
+                android:id="@+id/ctvLikesCount"
+                android:text="29"
+
+        />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="end"
+                      android:gravity="end"
+        >
+            <com.ids.inpoint.custom.CustomTextViewMedium
+                    android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_small"
+                    android:id="@+id/ctvCommentsCount"
+                    android:text="2 comments"
+
+            />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="35dp"
+                  android:background="@color/white"
+                  android:layout_marginTop="@dimen/small_margin"
+                  android:orientation="horizontal"
+
+    >
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/linearLike"
+                android:layout_weight="1">
+
+            <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/like"
+                    android:id="@+id/ivLike"
+
+            />
+
+            <com.ids.inpoint.custom.CustomTextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/like"
+                    android:textSize="@dimen/font_small"
+                    android:layout_marginLeft="@dimen/small_margin"
+                    android:layout_marginStart="@dimen/small_margin"
+
+            />
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:id="@+id/linearComment"
+
+                android:gravity="center"
+                android:layout_weight="1.4">
+
+            <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/ivComment"
+                    android:src="@drawable/comment"
+
+            />
+
+            <com.ids.inpoint.custom.CustomTextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/comment"
+                    android:textSize="@dimen/font_small"
+                    android:layout_marginLeft="@dimen/small_margin"
+                    android:layout_marginStart="@dimen/small_margin"
+
+            />
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/LinearVerified"
+                android:layout_weight="1">
+
+            <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/ivVerified"
+                    android:src="@drawable/verified"
+
+            />
+
+            <com.ids.inpoint.custom.CustomTextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/verify"
+                    android:id="@+id/tvVerify"
+                    android:textSize="@dimen/font_small"
+                    android:layout_marginLeft="@dimen/small_margin"
+                    android:layout_marginStart="@dimen/small_margin"
+
+            />
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/linearShare"
+                android:layout_weight="1">
+
+            <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/share"
+                    android:id="@+id/ivShare"
+
+            />
+
+            <com.ids.inpoint.custom.CustomTextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Share"
+                    android:textSize="@dimen/font_small"
+                    android:layout_marginLeft="@dimen/small_margin"
+                    android:layout_marginStart="@dimen/small_margin"
+
+            />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rvComments"
+
+
+
+    />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/normal_margin"
+            android:id="@+id/linearWriteComment"
+
+    >
+        <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/photo"
+                android:visibility="gone"
+                android:id="@+id/ivPhoto"
+
+        />
+
+        <EditText
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:id="@+id/etComment"
+                android:layout_marginLeft="1dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/rounded_corner_gray"
+                android:hint="@string/write_a_comment"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+                android:paddingBottom="@dimen/normal_margin"
+
+                android:paddingLeft="@dimen/normal_margin"
+                android:paddingStart="@dimen/normal_margin"
+        />
+
+
+        <ImageView android:layout_width="30dp"
+                   android:layout_height="30dp"
+                   android:src="@drawable/send"
+                   android:id="@+id/ivSend"
+                   android:layout_gravity="center_vertical"
+                   android:layout_marginLeft="@dimen/normal_margin"
+                   android:layout_marginRight="@dimen/normal_margin"
+        />
+    </LinearLayout>
+
+</LinearLayout>

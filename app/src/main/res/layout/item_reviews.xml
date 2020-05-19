@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:orientation="horizontal"
+              android:layout_marginTop="@dimen/normal_margin"
+              android:id="@+id/linearReviews"
+              android:layout_height="wrap_content">
+
+    <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/ivUserComment"
+            android:src="@drawable/profile"
+
+    />
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/second_margin"
+            android:layout_marginStart="@dimen/second_margin"
+            android:orientation="vertical">
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_comment"
+                android:orientation="vertical"
+                android:padding="10dp"
+
+        >
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:layout_gravity="center_vertical"
+                          android:gravity="center_vertical"
+            >
+            <com.ids.inpoint.custom.CustomTextViewBold
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ctvCommentUserName"
+                    android:textSize="@dimen/font"
+                    android:text="Hilal Karam"
+                    android:textColor="@color/primary"
+            />
+
+                <LinearLayout android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_gravity="end"
+                              android:gravity="end"
+                              android:orientation="horizontal"
+                >
+                    <RatingBar
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rbCourse"
+                            style="@style/Widget.AppCompat.RatingBar.Small"
+                            android:layout_gravity="center_vertical"
+                    />
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/linearReviewSettings"
+                            android:visibility="gone"
+                            android:orientation="horizontal">
+                        <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/edit"
+                                android:id="@+id/btEditReview"
+                                android:layout_marginLeft="@dimen/small_margin"
+                                android:layout_marginRight="@dimen/small_margin"
+                                />
+
+                        <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginRight="@dimen/small_margin"
+                                android:layout_marginLeft="@dimen/small_margin"
+                                android:id="@+id/btDeleteReview"
+                                android:src="@drawable/ic_delete"
+                                android:tint="@color/secondary"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <com.ids.inpoint.custom.CustomTextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/small_margin"
+                    android:id="@+id/ctvComment"
+                    android:text="Great job!"
+            />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

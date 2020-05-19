@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/small_margin"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="horizontal"
+>
+
+
+    <android.support.v7.widget.CardView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:cardElevation="2dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            app:cardUseCompatPadding="true"
+            android:padding="@dimen/normal_margin"
+            android:id="@+id/cvImage"
+            android:layout_gravity="center"
+            app:cardCornerRadius="2dp"
+
+
+    >
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/ivCategoryImage"
+                android:scaleType="centerCrop"
+        />
+    </android.support.v7.widget.CardView>
+
+    <com.ids.inpoint.custom.CustomTextViewMedium
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font"
+            android:paddingLeft="@dimen/small_margin"
+            android:paddingStart="@dimen/small_margin"
+            android:id="@+id/tvCategoryTitle"
+    />
+
+    <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_right_1"
+            android:tint="@color/primary"
+            android:id="@+id/ivVerified"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/normal_margin"
+            android:layout_marginLeft="@dimen/normal_margin"
+    />
+
+
+</LinearLayout>

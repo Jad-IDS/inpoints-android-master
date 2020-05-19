@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             android:layout_width="match_parent"
+                                             android:background="@color/white"
+                                             android:layout_height="match_parent">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+    >
+    <com.ids.inpoint.custom.CustomTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/normal_margin"
+            android:id="@+id/tvPopupTitle"
+            android:textSize="@dimen/font"
+            android:text="@string/likes"
+            android:textColor="@color/primary"
+
+    />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_medium_2"
+            android:layout_marginTop="@dimen/normal_margin"
+    />
+
+    <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:id="@+id/rvUsers"
+            android:padding="@dimen/normal_margin"
+    />
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_medium_2"
+                android:layout_marginTop="@dimen/normal_margin"
+        />
+
+
+        <com.ids.inpoint.custom.CustomTextViewBold
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/rectangular_secondary"
+                android:layout_gravity="end"
+                android:gravity="center"
+                android:id="@+id/btCancel"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font"
+                android:text="@string/cancel"
+                android:layout_margin="@dimen/normal_margin"
+        />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

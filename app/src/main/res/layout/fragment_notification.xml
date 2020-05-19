@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+            android:layout_width="match_parent"
+            android:id="@+id/srlNotification"
+            android:layout_height="match_parent">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+    <com.ids.inpoint.custom.CustomTextViewBold
+            android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/medium_font"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/second_margin"
+            android:text="@string/notification"
+    />
+
+
+    <com.ids.inpoint.custom.CustomTextViewMedium
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:layout_marginEnd="@dimen/normal_margin"
+            android:id="@+id/tvUnread"
+            android:layout_marginRight="@dimen/normal_margin"
+            android:textSize="@dimen/font_too_small"
+            android:textColor="@color/black"
+    />
+
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_medium"
+            android:layout_marginTop="@dimen/normal_margin"
+    />
+
+
+    <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+             android:id="@+id/rvNotification"
+
+    />
+
+    </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

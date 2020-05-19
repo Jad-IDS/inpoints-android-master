@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+    <include layout="@layout/toolbar_general" />
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/second_margin"
+                android:layout_marginTop="@dimen/normal_margin"
+                android:layout_marginRight="@dimen/second_margin"
+                android:background="@color/gray_light"
+                android:orientation="vertical"
+                android:padding="@dimen/normal_margin">
+
+            <com.ids.inpoint.custom.CustomTextViewBold
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/new_project"
+                    android:textSize="@dimen/large_font"
+                    />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/big_margin"
+                    android:orientation="horizontal">
+
+                <EditText
+                        android:id="@+id/etName"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_40"
+                        android:layout_margin="@dimen/small_margin"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/rectangular_post_button"
+                        android:hint="@string/name_required"
+                        android:padding="10dp"
+                        android:textSize="@dimen/font" />
+
+                <EditText
+                        android:id="@+id/etCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_40"
+                        android:layout_margin="@dimen/small_margin"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/rectangular_post_button"
+                        android:hint="@string/code"
+                        android:padding="10dp"
+                        android:textSize="@dimen/font" />
+            </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/second_margin">
+
+            <EditText
+                    android:id="@+id/etSummary"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_40"
+                    android:layout_margin="@dimen/small_margin"
+                    android:background="@drawable/rectangular_post_button"
+                    android:hint="@string/summary_required"
+                    android:padding="10dp"
+                    android:textSize="@dimen/font" />
+
+        </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/second_margin"
+                    android:orientation="horizontal">
+
+                <com.ids.inpoint.custom.CustomTextViewMedium
+                        android:id="@+id/tvStartDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_40"
+                        android:layout_margin="@dimen/small_margin"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/rectangular_post_button"
+                        android:hint="@string/start_date_required"
+                        android:padding="10dp"
+                        android:textSize="@dimen/font" />
+
+                <com.ids.inpoint.custom.CustomTextViewMedium
+                        android:id="@+id/tvDueDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_40"
+                        android:layout_margin="@dimen/small_margin"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/rectangular_post_button"
+                        android:hint="@string/due_date_required"
+                        android:padding="10dp"
+                        android:textSize="@dimen/font" />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/second_margin"
+                    android:orientation="horizontal">
+
+                <com.ids.inpoint.custom.CustomTextViewMedium
+                        android:id="@+id/tvEndDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_40"
+                        android:layout_margin="@dimen/small_margin"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/rectangular_post_button"
+                        android:hint="@string/end_date"
+                        android:padding="10dp"
+                        android:textSize="@dimen/font" />
+
+                <LinearLayout
+                        android:id="@+id/llType"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_40"
+                        android:layout_margin="@dimen/small_margin"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/rectangular_post_button"
+                        android:orientation="horizontal">
+
+                    <com.ids.inpoint.custom.CustomTextViewMedium
+                            android:id="@+id/tvTypes"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_40"
+                            android:layout_weight="1"
+                            android:hint="@string/type"
+                            android:padding="10dp"
+                            android:textSize="@dimen/font" />
+
+                    <ImageView
+                            android:layout_width="@dimen/height_40"
+                            android:layout_height="@dimen/height_40"
+                            android:padding="10dp"
+                            android:src="@drawable/arrow_down" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/second_margin">
+
+                <EditText
+                        android:id="@+id/etClient"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="@dimen/height_40"
+                        android:layout_margin="@dimen/small_margin"
+                        android:background="@drawable/rectangular_post_button"
+                        android:hint="@string/client"
+                        android:padding="10dp"
+                        android:textSize="@dimen/font" />
+                <LinearLayout
+                        android:id="@+id/llAssignees"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/height_40"
+                        android:layout_margin="@dimen/small_margin"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectangular_post_button"
+                        android:orientation="horizontal">
+
+                    <com.ids.inpoint.custom.CustomTextViewMedium
+                            android:id="@+id/tvAssignees"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_40"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:hint="@string/assigned_to_required"
+                            android:padding="2dp"
+                            android:textSize="@dimen/font_small" />
+
+                    <ImageView
+                            android:layout_width="@dimen/height_40"
+                            android:layout_height="@dimen/height_40"
+                            android:padding="10dp"
+                            android:src="@drawable/arrow_down" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/small_margin">
+
+                <LinearLayout
+                        android:id="@+id/btSave"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_40"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/rectangular_secondary"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:orientation="horizontal">
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                        <com.ids.inpoint.custom.CustomTextViewMedium
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:inputType="textCapWords"
+                                android:text="@string/save"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/medium_font" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/llTypes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="240dp"
+                android:layout_marginEnd="@dimen/big_margin"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:minWidth="90dp"
+                    android:visibility="invisible" />
+
+            <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvTypes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:layout_weight="0.5"
+                    android:background="@color/white"
+                    android:visibility="visible" />
+        </LinearLayout>
+
+        <include layout="@layout/loading" />
+    </RelativeLayout>
+
+</LinearLayout>

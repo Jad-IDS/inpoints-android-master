@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rlImageText"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_40"
+        android:orientation="horizontal">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+        <LinearLayout
+                android:layout_width="@dimen/height_40"
+                android:layout_height="@dimen/height_40"
+                android:background="@drawable/circle_border_white">
+
+            <ImageView
+                    android:id="@+id/ivImage"
+                    android:layout_width="39dp"
+                    android:layout_height="39dp"
+                    android:layout_marginEnd="@dimen/big_margin"
+                    android:src="@drawable/profile" />
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <com.ids.inpoint.custom.CustomTextViewMedium
+                    android:id="@+id/tvText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Text"
+                    android:textSize="@dimen/font" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

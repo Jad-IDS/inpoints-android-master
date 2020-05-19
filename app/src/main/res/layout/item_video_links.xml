@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/normal_margin"
+        android:orientation="horizontal"
+        android:id="@+id/linearItemLink"
+        android:layout_gravity="center"
+        android:gravity="center"
+
+>
+
+    <com.ids.inpoint.custom.CustomTextViewMedium
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vimeo:"
+            android:textSize="@dimen/font"
+            android:paddingStart="@dimen/normal_margin"
+            android:paddingLeft="@dimen/normal_margin"
+            android:id="@+id/tvVideoType"
+    />
+
+
+    <com.ids.inpoint.custom.CustomTextViewMedium
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="www.vimeo.com"
+            android:textSize="@dimen/font"
+            android:paddingStart="@dimen/big_margin"
+            android:paddingLeft="@dimen/big_margin"
+            android:id="@+id/tvVideoLink"
+    />
+
+    <LinearLayout
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/circle_secondary"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/btRemoveLink"
+            android:layout_marginRight="@dimen/normal_margin"
+            android:layout_marginEnd="@dimen/normal_margin"
+    >
+        <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/close"
+                android:tint="@color/white"
+                android:layout_gravity="center"
+        />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/normal_margin"
+                android:orientation="vertical">
+            <com.ids.inpoint.custom.CustomTextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/normal_margin"
+                    android:text="@string/reviews"
+                    android:textColor="@color/primary"
+                    android:textSize="@dimen/font" />
+
+            <com.ids.inpoint.custom.CustomTextViewMedium
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="@dimen/big_margin"
+
+                    android:gravity="start"
+                    android:textColor="@color/secondary"
+                    android:id="@+id/btWriteReview"
+                    android:text="@string/write_a_review" />
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/normal_margin"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    >
+
+                <com.ids.inpoint.custom.CustomTextViewMedium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvReviewCount"
+                        android:text="2 Reviews"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/primary"
+                        />
+                <LinearLayout android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:gravity="end"
+                        >
+
+                    <RatingBar
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/Widget.AppCompat.RatingBar.Small"
+                            android:layout_marginLeft="@dimen/normal_margin"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/normal_margin"
+                            />
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rvReviews"
+                    android:nestedScrollingEnabled="false"
+                    android:layout_marginBottom="@dimen/second_margin"
+                    android:layout_marginTop="@dimen/second_margin"
+
+                    />
+        </LinearLayout>
+        <include layout="@layout/loading_trans"/>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/normal_margin"
+        android:paddingStart="@dimen/normal_margin"
+        android:paddingLeft="@dimen/normal_margin"
+        android:id="@+id/linearItemUser"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:layout_height="59dp">
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+    >
+
+    <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/ivUser"
+            android:src="@drawable/avatar"
+
+
+    />
+<LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+       android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/normal_margin"
+        android:layout_marginStart="@dimen/normal_margin"
+        >
+    <com.ids.inpoint.custom.CustomTextViewMedium
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/tvUsername"
+
+            android:textSize="@dimen/font"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            />
+
+    <com.ids.inpoint.custom.CustomTextViewMedium
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDesc"
+            android:maxLines="2"
+            android:visibility="gone"
+            android:textSize="@dimen/font_too_small"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            />
+
+</LinearLayout>
+
+
+        <LinearLayout
+                android:id="@+id/llActions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:visibility="gone"
+                android:layout_marginEnd="@dimen/normal_margin"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/normal_margin"
+                android:paddingEnd="@dimen/normal_margin">
+
+
+            <ImageView
+                    android:id="@+id/btView"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+
+                    android:layout_gravity="start|center_vertical"
+                    android:layout_marginEnd="@dimen/normal_margin"
+                    android:src="@drawable/visibility_on"
+                    android:tint="@color/secondary" />
+
+            <ImageView
+                    android:id="@+id/btEdit"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="start|center_vertical"
+                    android:layout_marginEnd="@dimen/normal_margin"
+                    android:src="@drawable/edit"
+                    android:tint="@color/secondary" />
+
+            <ImageView
+                    android:id="@+id/btDelete"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginStart="@dimen/normal_margin"
+                    android:src="@drawable/ic_delete"
+                    android:tint="@color/secondary" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_medium_2"/>
+
+</LinearLayout>

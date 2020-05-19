@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="IdSpinnerSort" type="id"/>
+    <item name="IdSpinnerSelect" type="id"/>
+
+    <item name="IdSpinnerCities" type="id"/>
+    <item name="IdSpinnerNationalities" type="id"/>
+    <item name="IdSpinnerGender" type="id"/>
+    <item name="IdSpinnerPrivacy" type="id"/>
+    <item name="IdSpinnerUsers" type="id"/>
+    <item name="IdSpinnerTypes" type="id"/>
+    <item name="IdSpinnerLocations" type="id"/>
+
+    <item name="linearItemUserOrganizer" type="id"/>
+    <item name="linearItemUserInvestor" type="id"/>
+    <item name="linearItemUserSponsor" type="id"/>
+    <item name="ivRemoveUserOrganizer" type="id"/>
+
+    <item name="linearResources" type="id"/>
+    <item name="ivRemoveResources" type="id"/>
+    <item name="ivEditResources" type="id"/>
+
+    <item name="linearDates" type="id"/>
+    <item name="ivRemovDates" type="id"/>
+    <item name="ivEditDates" type="id"/>
+
+    <item name="btFollowFollower" type="id"/>
+    <item name="btFollowLikers" type="id"/>
+
+    <item name="btSponsorFunding" type="id"/>
+    <item name="btSponsorResources" type="id"/>
+
+    <item name="btEditA" type="id" />
+    <item name="btDeleteA" type="id" />
+
+    <item name="btEditB" type="id" />
+    <item name="btDeleteB" type="id" />
+
+    <item name="btEditC" type="id" />
+    <item name="btDeleteC" type="id" />
+</resources>

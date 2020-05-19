@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/footer_height"
+        android:layout_gravity="center_vertical"
+        android:background="@color/primary"
+        android:id="@+id/linearFooter"
+        android:orientation="horizontal"
+       android:gravity="center_vertical">
+
+    <LinearLayout android:layout_width="0dp"
+                  android:layout_weight="1"
+                  android:layout_gravity="center"
+                  android:gravity="center"
+                  android:id="@+id/btNewsfeed"
+                  android:layout_height="match_parent">
+
+        <ImageView
+                android:layout_width="@dimen/tab_icon_width_height"
+                android:layout_height="@dimen/tab_icon_width_height"
+                android:id="@+id/ivFooterNewsFeed"
+                android:scaleType="centerInside"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:src="@drawable/newsfeed"
+        />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout android:layout_width="0dp"
+                  android:layout_weight="1"
+                  android:layout_gravity="center"
+                  android:gravity="center"
+                  android:id="@+id/btProfile"
+                  android:layout_height="match_parent">
+
+        <ImageView
+                android:layout_width="@dimen/tab_icon_width_height"
+                android:layout_height="@dimen/tab_icon_width_height"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:scaleType="centerInside"
+                android:id="@+id/ivFooterProfile"
+                android:src="@drawable/ic_profile"
+
+        />
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="0dp"
+                  android:layout_weight="1"
+                  android:layout_gravity="center"
+                  android:gravity="center"
+                  android:id="@+id/btElearning"
+                  android:layout_height="match_parent">
+
+        <ImageView
+                android:layout_width="@dimen/tab_icon_width_height"
+                android:layout_height="@dimen/tab_icon_width_height"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:scaleType="centerInside"
+                android:id="@+id/ivFooterElearning"
+                android:src="@drawable/tab"
+        />
+
+    </LinearLayout>
+
+
+    <LinearLayout android:layout_width="0dp"
+                  android:layout_weight="1"
+                  android:layout_gravity="center"
+                  android:gravity="center"
+                  android:id="@+id/btTeams"
+                  android:layout_height="match_parent">
+
+        <ImageView
+                android:layout_width="@dimen/tab_icon_width_height"
+                android:layout_height="@dimen/tab_icon_width_height"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:scaleType="centerInside"
+                android:id="@+id/ivFooterTeams"
+                android:src="@drawable/ic_team"
+
+        />
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/btStartUp"
+            android:layout_height="match_parent">
+
+        <ImageView
+                android:layout_width="@dimen/tab_icon_width_height"
+                android:layout_height="@dimen/tab_icon_width_height"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:scaleType="centerInside"
+                android:id="@+id/ivFooterStartup"
+                android:src="@drawable/ic_startup"
+
+                />
+
+    </LinearLayout>
+
+
+
+
+
+
+    <LinearLayout android:layout_width="0dp"
+                  android:layout_weight="1"
+                  android:layout_gravity="center"
+                  android:gravity="center"
+                  android:id="@+id/btSettings"
+                  android:layout_height="match_parent">
+
+        <ImageView
+                android:layout_width="@dimen/tab_icon_width_height"
+                android:layout_height="@dimen/tab_icon_width_height"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:scaleType="centerInside"
+                android:id="@+id/ivFooterSettings"
+                android:src="@drawable/option_bar"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

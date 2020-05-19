@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+>
+
+
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+    >
+
+        <ImageView android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:id="@+id/coverImage"
+                   android:scaleType="centerCrop"
+                   android:background="@drawable/buildings"/>
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/primary_trans"/>
+        <include layout="@layout/loading"/>
+
+        <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/btBack"
+                android:layout_margin="20dp"
+                android:background="@drawable/ic_back"
+        />
+
+
+             <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                              android:orientation="vertical"
+                              android:paddingRight="@dimen/normal_margin"
+                              android:paddingLeft="@dimen/normal_margin"
+                              android:layout_marginTop="20dp"
+                >
+
+
+
+
+
+                    <LinearLayout
+                            android:layout_width="135dp"
+                            android:layout_height="135dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+
+                            android:layout_marginTop="30dp"
+                            android:id="@+id/linearProfile"
+                            android:background="@drawable/circle_shadow"
+
+                    >
+                        <RelativeLayout android:layout_width="120dp"
+                                        android:layout_height="120dp"
+
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+
+                        >
+
+                            <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/ivUserProfile"
+
+                            />
+
+                            <LinearLayout
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_alignParentEnd="true"
+
+                                    android:gravity="center"
+                                    android:background="@drawable/circle_white_border"
+                            >
+                                <Button
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:background="@drawable/edit"
+
+                                />
+
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                            android:layout_width="300dp"
+                            android:layout_height="135dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:visibility="gone"
+                            android:background="@drawable/rectangular_shadow"
+                            android:id="@+id/linearBackground"
+                            android:layout_marginTop="30dp"
+
+
+                    >
+                        <RelativeLayout android:layout_width="280dp"
+                                        android:layout_height="120dp"
+
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+
+                        >
+
+                            <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/ivUserBackground"
+                                    android:scaleType="centerCrop"
+
+                            />
+
+                            <LinearLayout
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_alignParentEnd="true"
+
+                                    android:gravity="center"
+                                    android:background="@drawable/circle_white_border"
+                            >
+                                <Button
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:background="@drawable/edit"
+
+                                />
+
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                    <com.ids.inpoint.custom.CustomTextViewMedium
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="You can Choose from Photos"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginLeft="4dp"
+                            android:textSize="@dimen/font"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="30dp"
+                    />
+
+        <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rvProfileImages"
+                android:layout_marginTop="@dimen/second_margin"
+
+        />
+
+
+
+
+
+
+                </LinearLayout>
+
+                 <LinearLayout
+                         android:layout_width="wrap_content"
+                         android:layout_height="40dp"
+                         android:layout_alignParentBottom="true"
+                         android:layout_alignParentRight="true"
+                         android:layout_marginBottom="30dp"
+                         android:layout_marginEnd="20dp"
+
+                         android:id="@+id/btUploadImage"
+                         android:background="@drawable/rounde_corner_login_light"
+
+                 >
+                     <com.ids.inpoint.custom.CustomTextViewMedium
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:textSize="@dimen/font"
+                             android:text="@string/save_changes"
+                             android:layout_gravity="center_vertical"
+                             android:gravity="center_vertical"
+                             android:textColor="@color/white"
+                             android:paddingLeft="@dimen/big_margin"
+                             android:paddingRight="@dimen/big_margin"
+                     />
+
+
+                     <LinearLayout
+                             android:layout_width="40dp"
+                             android:layout_height="40dp"
+                             android:background="@drawable/circle_white"
+                             android:layout_gravity="center"
+                             android:gravity="center"
+                     >
+
+                         <ImageView
+                                 android:layout_width="20dp"
+                                 android:layout_height="20dp"
+                                 android:src="@drawable/edit"
+                                 android:layout_gravity="center"
+                         />
+                     </LinearLayout>
+
+                 </LinearLayout>
+             </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

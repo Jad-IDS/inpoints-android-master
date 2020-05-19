@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:layout_gravity="center_vertical"
+        android:background="@color/primary"
+        android:id="@+id/linearToolbar"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/toolbar_margin_left_right"
+        android:paddingRight="@dimen/toolbar_margin_left_right"
+        android:gravity="center_vertical">
+
+
+    <Button
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/back"
+            android:id="@+id/btBack"
+
+    />
+
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="horizontal"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginRight="10dp"
+                  android:paddingLeft="10dp"
+                  android:paddingRight="10dp"
+                  android:layout_gravity="end"
+                  android:gravity="end"
+
+    >
+
+    <com.ids.inpoint.custom.CustomTextViewMedium
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/medium_font"
+            android:id="@+id/tvToolbarTitle"
+            android:textColor="@color/white_trans"
+    />
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/mini_margin"
+        android:id="@+id/linearMedia"
+        android:layout_height="200dp">
+
+
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rlImagePost"
+
+                    >
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:id="@+id/ivImagePost"
+
+
+                        />
+
+
+                <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/simpleExoPlayerView"
+                        android:visibility="gone"
+
+                        />
+
+                <FrameLayout
+                        android:id="@+id/youtube_layout_item"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+
+                        android:visibility="visible">
+
+                    <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/youtube_placeholder"
+                            android:id="@+id/ivPlayYoutube"
+                            android:scaleType="centerCrop"
+                            />
+                </FrameLayout>
+
+
+            </RelativeLayout>
+
+
+
+</LinearLayout>

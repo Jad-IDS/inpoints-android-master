@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:layout_height="match_parent">
+
+        <include layout="@layout/toolbar_general"/>
+
+
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+        <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:id="@+id/rvChats"
+
+                />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/normal_margin"
+                android:layout_marginBottom="@dimen/small_margin"
+                android:id="@+id/linearWriteComment"
+
+                >
+            <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/photo"
+                    android:visibility="gone"
+                    android:id="@+id/ivPhoto"
+
+                    />
+
+            <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:id="@+id/etMessage"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/rounded_corner_gray"
+                    android:hint="@string/send_a_message"
+                    android:paddingLeft="@dimen/normal_margin"
+                    android:paddingStart="@dimen/normal_margin"
+                    />
+
+
+            <ImageView android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/send"
+                    android:id="@+id/ivSend"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/normal_margin"
+                    android:layout_marginRight="@dimen/normal_margin"
+                    />
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/loading_trans"/>
+
+</RelativeLayout>
+
+
+
+
+
+</LinearLayout>

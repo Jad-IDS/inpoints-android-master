@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangular_gray"
+            android:layout_marginTop="@dimen/normal_margin"
+            android:orientation="horizontal"
+
+    >
+
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+        >
+            <com.ids.inpoint.custom.CustomTextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                   android:id="@+id/tvProjectName"
+                    android:textSize="@dimen/font"
+            />
+            <com.ids.inpoint.custom.CustomTextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:id="@+id/tvProjectCode"
+                    android:textSize="@dimen/font"
+            />
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/gray_medium_2"/>
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+        >
+            <com.ids.inpoint.custom.CustomTextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:id="@+id/tvType"
+                    android:textColor="@color/black"
+
+                    android:textSize="@dimen/font"
+            />
+            <com.ids.inpoint.custom.CustomTextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:id="@+id/tvClient"
+                    android:textColor="@color/black"
+
+                    android:textSize="@dimen/font"
+            />
+
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/gray_medium_2"/>
+
+
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+        >
+            <com.ids.inpoint.custom.CustomTextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:id="@+id/tvStartDate"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font"
+            />
+            <com.ids.inpoint.custom.CustomTextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:id="@+id/tvDueDate"
+                    android:textSize="@dimen/font"
+            />
+
+            <com.ids.inpoint.custom.CustomTextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:id="@+id/tvEndDate"
+                    android:textSize="@dimen/font"
+            />
+
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/gray_medium_2"/>
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+        >
+
+            <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="@dimen/mini_margin"
+                    android:src="@drawable/ic_team"
+                    android:id="@+id/btTeam"
+                    android:tint="@color/secondary"
+                    android:layout_marginLeft="@dimen/mini_margin"
+            />
+
+            <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/btEdit"
+                    android:src="@drawable/ic_pen"
+                    android:layout_marginRight="@dimen/mini_margin"
+                    android:layout_marginLeft="@dimen/mini_margin"
+            />
+
+            <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/btDelete"
+                    android:src="@drawable/ic_trash"
+                    android:layout_marginRight="@dimen/mini_margin"
+                    android:layout_marginLeft="@dimen/mini_margin"
+            />
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+

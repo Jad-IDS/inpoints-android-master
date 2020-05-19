@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             android:layout_width="match_parent"
+                                             android:orientation="horizontal"
+                                              android:layout_marginTop="@dimen/normal_margin"
+                                             android:layout_height="wrap_content">
+
+    <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/ivUserComment"
+            android:src="@drawable/profile"
+
+    />
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/second_margin"
+            android:layout_marginStart="@dimen/second_margin"
+            android:orientation="vertical">
+
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_comment"
+                android:orientation="vertical"
+                android:padding="10dp"
+
+        >
+            <com.ids.inpoint.custom.CustomTextViewBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ctvCommentUserName"
+                    android:textSize="@dimen/font"
+                    android:text="Hilal Karam"
+                    android:textColor="@color/primary"
+            />
+
+            <com.ids.inpoint.custom.CustomTextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/small_margin"
+                    android:id="@+id/ctvComment"
+                    android:text="Great job!"
+            />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/small_margin"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+
+        >
+            <com.ids.inpoint.custom.CustomTextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8m"
+                    android:textColor="@color/gray_text"
+                    android:textSize="@dimen/font_small"
+                    android:id="@+id/ctvCommentTime"
+
+            />
+
+            <com.ids.inpoint.custom.CustomTextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/delete"
+                    android:textSize="@dimen/font_small"
+                    android:textColor="@color/gray_text"
+                    android:id="@+id/ctvDelete"
+                    android:layout_marginLeft="@dimen/normal_margin"
+                    android:layout_marginStart="@dimen/normal_margin"
+
+            />
+
+
+            <com.ids.inpoint.custom.CustomTextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/reply"
+                    android:layout_marginLeft="@dimen/normal_margin"
+                    android:textColor="@color/gray_text"
+                    android:layout_marginStart="@dimen/normal_margin"
+                    android:textSize="@dimen/font_small"
+                    android:id="@+id/ctvReply"
+
+
+            />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rvSubComments"
+            android:layout_marginLeft="@dimen/second_margin"
+            android:layout_marginStart="@dimen/second_margin"
+    />
+    <com.ids.inpoint.custom.CustomTextViewMedium
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/tvReplyCount"
+            android:textSize="@dimen/font"
+            android:layout_marginLeft="@dimen/second_margin"
+            android:layout_marginStart="@dimen/second_margin"
+            android:textColor="@color/secondary"
+            android:layout_marginTop="@dimen/normal_margin"
+
+    />
+
+
+</LinearLayout>
+
+
+</LinearLayout>

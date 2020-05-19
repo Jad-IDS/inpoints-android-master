@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="@drawable/rounded_corner_gray"
+            android:layout_marginTop="@dimen/normal_margin"
+    >
+
+
+    <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:id="@+id/linearViewUser"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+    >
+        <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/ivUser"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/normal_margin"
+                android:layout_marginRight="@dimen/normal_margin"
+        />
+
+        <com.ids.inpoint.custom.CustomTextViewMedium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:id="@+id/tvUsername"
+                android:text="@string/users"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font"
+        />
+
+
+    </LinearLayout>
+
+
+
+        <com.ids.inpoint.custom.CustomTextViewMedium
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/tvTeamName"
+                android:text="@string/team"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font"
+        />
+
+
+
+
+<LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+
+
+    <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/btAcceptRequest"
+            android:src="@drawable/icon_request_check"
+            android:layout_marginRight="@dimen/normal_margin"
+            android:layout_marginEnd="@dimen/normal_margin"
+    />
+
+    <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="@dimen/normal_margin"
+            android:layout_marginLeft="@dimen/normal_margin"
+            android:src="@drawable/icon_request_cancel"
+            android:id="@+id/btCancelRequest"
+    />
+</LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

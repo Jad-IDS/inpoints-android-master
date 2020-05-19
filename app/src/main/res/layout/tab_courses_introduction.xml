@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:paddingTop="@dimen/second_margin"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:id="@+id/tab_intro"
+        android:layout_height="match_parent">
+
+    <com.ids.inpoint.custom.CustomTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary"
+            android:text="@string/introduction"
+            android:layout_gravity="start"
+            android:gravity="start"
+            android:textSize="@dimen/font"
+
+    />
+
+    <WebView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/second_margin"
+            android:id="@+id/wvIntro"/>
+
+
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+
+
+    <com.ids.inpoint.custom.CustomTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary"
+            android:text="@string/introduction"
+            android:textSize="@dimen/font"
+
+    />
+
+
+    <com.ids.inpoint.custom.CustomTextViewMedium
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font"
+            android:layout_marginTop="@dimen/second_margin"
+            android:text="lmply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type spe"
+
+    />
+
+
+
+    <com.ids.inpoint.custom.CustomTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary"
+            android:text="Goal"
+            android:layout_marginTop="@dimen/second_margin"
+            android:textSize="@dimen/font"
+
+    />
+
+      <LinearLayout android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:layout_marginTop="@dimen/second_margin"
+              android:layout_gravity="center_vertical"
+              android:gravity="center_vertical"
+>
+    <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/participate"
+            android:tint="@color/secondary"
+    />
+    <com.ids.inpoint.custom.CustomTextViewMedium
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_marginStart="@dimen/small_margin"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:text="lmply dummy text of the"
+
+    />
+
+</LinearLayout>
+      <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:layout_marginTop="@dimen/normal_margin"
+                  android:layout_gravity="center_vertical"
+                  android:gravity="center_vertical"
+    >
+        <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/participate"
+                android:tint="@color/secondary"
+        />
+        <com.ids.inpoint.custom.CustomTextViewMedium
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_marginStart="@dimen/small_margin"
+                android:layout_marginLeft="@dimen/small_margin"
+                android:text="lmply dummy text of the printing and "
+
+        />
+
+    </LinearLayout>
+
+
+
+    <com.ids.inpoint.custom.CustomTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary"
+            android:layout_marginTop="@dimen/second_margin"
+            android:text="@string/about_judegement"
+            android:textSize="@dimen/font"
+
+    />
+
+
+    <com.ids.inpoint.custom.CustomTextViewMedium
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font"
+            android:layout_marginTop="@dimen/second_margin"
+            android:text="lmply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type spe"
+            android:layout_marginBottom="@dimen/second_margin"
+    />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

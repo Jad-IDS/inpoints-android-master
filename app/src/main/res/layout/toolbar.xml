@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_gravity="center_vertical"
+        android:background="@color/primary"
+        android:id="@+id/linearToolbar"
+        android:paddingLeft="@dimen/toolbar_margin_left_right"
+        android:paddingRight="@dimen/toolbar_margin_left_right"
+        android:gravity="center_vertical">
+
+
+    <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/ivToolbarBack"
+            android:src="@drawable/back"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_marginRight="@dimen/small_margin"
+            android:layout_marginEnd="@dimen/small_margin"
+    />
+
+    <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/circle_gray_dark"
+            android:padding="0.5dp"
+            android:id="@+id/ivToolbarProfile"
+            android:layout_gravity="center_vertical"
+
+
+    />
+
+
+    <LinearLayout android:layout_width="0dp"
+                  android:layout_height="@dimen/search_height"
+                  android:layout_weight="1"
+                  android:orientation="horizontal"
+                  android:background="@drawable/rounded_corner_dark_bg"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginRight="10dp"
+                  android:id="@+id/linearSearch"
+                  android:paddingLeft="10dp"
+                  android:paddingRight="10dp"
+                  android:layout_gravity="center_vertical"
+                  android:gravity="center_vertical"
+
+    >
+
+        <Button
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/ic_search"
+                android:id="@+id/icSearch"
+
+
+        />
+
+
+        <android.support.v7.widget.SearchView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/svSearch"
+                android:visibility="gone"
+                style="@style/MySearchViewStyle"
+                app:iconifiedByDefault="false"
+                app:searchIcon="@null"
+
+        />
+        <com.ids.inpoint.custom.CustomTextViewMedium
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:id="@+id/tvSearch"
+                android:textColor="@color/white"
+
+        />
+
+
+
+    </LinearLayout>
+
+
+    <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/chat"
+            android:id="@+id/ivChat"
+            android:layout_gravity="center_vertical"
+
+    />
+
+
+    <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_notification"
+            android:tint="@color/secondary"
+            android:id="@+id/ivNotification"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:layout_marginStart="@dimen/small_margin"
+            android:layout_gravity="center_vertical"
+
+    />
+</LinearLayout>

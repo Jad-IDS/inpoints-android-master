@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/normal_margin"
+        android:paddingLeft="@dimen/normal_margin"
+        android:paddingRight="@dimen/normal_margin"
+        android:id="@+id/linearItemUser"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:layout_height="50dp">
+
+    <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/ivUser"
+            android:src="@drawable/avatar"
+
+
+    />
+
+    <com.ids.inpoint.custom.CustomTextViewMedium
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/normal_margin"
+            android:layout_marginStart="@dimen/normal_margin"
+            android:id="@+id/tvUsername"
+
+            android:textSize="@dimen/font"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+    />
+
+    <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_delete"
+            android:tint="@color/primary"
+            android:id="@+id/ivRemoveUser"
+    />
+</LinearLayout>

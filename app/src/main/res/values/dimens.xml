@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="toolbar_height">65dp</dimen>
+    <dimen name="footer_height">60dp</dimen>
+    <dimen name="toolbar_margin_left_right">12dp</dimen>
+    <dimen name="card_corner_radius">24dp</dimen>
+    <dimen name="comment_radius">8dp</dimen>
+    <dimen name="post_bt_radius">2dp</dimen>
+    <dimen name="mini_radius">2dp</dimen>
+    <dimen name="normal_radius">8dp</dimen>
+    <dimen name="search_height">30dp</dimen>
+    <dimen name="tab_icon_width_height">26dp</dimen>
+    <dimen name="large_font">15sp</dimen>
+    <dimen name="medium_font">14sp</dimen>
+    <dimen name="normal_margin">8dp</dimen>
+    <dimen name="small_margin">4dp</dimen>
+    <dimen name="mini_margin">2dp</dimen>
+    <dimen name="second_margin">11dp</dimen>
+    <dimen name="big_margin">20dp</dimen>
+    <dimen name="font">13sp</dimen>
+    <dimen name="font_small">12sp</dimen>
+    <dimen name="font_too_small">11sp</dimen>
+    <dimen name="profile_icon_height_width">30dp</dimen>
+    <dimen name="news_feed_padding">10dp</dimen>
+    <dimen name="height_25">25dp</dimen>
+    <dimen name="height_30">30dp</dimen>
+    <dimen name="height_35">35dp</dimen>
+    <dimen name="height_40">40dp</dimen>
+    <dimen name="height_45">45dp</dimen>
+</resources>

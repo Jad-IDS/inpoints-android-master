@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/normal_margin"
+    >
+
+
+
+        <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                android:id="@+id/rlImageEvent"
+
+                android:layout_marginTop="@dimen/normal_margin"
+                android:layout_weight="1">
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/ivImagePostEvents"
+                    android:scaleType="centerCrop"
+
+
+
+            />
+
+
+            <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/simpleExoPlayerView4"
+                    android:visibility="gone"
+
+            />
+
+            <FrameLayout
+                    android:id="@+id/youtube_layout_event"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_medium"
+                    android:layout_centerHorizontal="true"
+                    android:visibility="visible"  >
+                <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/youtube_placeholder"
+                        android:scaleType="centerCrop"
+                />
+            </FrameLayout>
+
+        </RelativeLayout>
+
+
+
+
+  <!--      <ImageView
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                android:scaleType="centerCrop"
+                android:id="@+id/ivImagePostEvents"
+                android:src="@drawable/buildings"
+                android:layout_weight="1"/>-->
+
+
+
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/normal_margin"
+                android:layout_marginStart="@dimen/normal_margin"
+        >
+
+            <com.ids.inpoint.custom.CustomTextViewBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvEventTitle"
+                    android:text="Coding course 1o3"
+                    android:layout_gravity="start"
+                    android:gravity="start"
+                    android:textColor="@color/primary"
+                    android:textSize="@dimen/font"/>
+
+            <com.ids.inpoint.custom.CustomTextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font"
+                    android:layout_gravity="start"
+                    android:gravity="start"
+                    android:id="@+id/ctvTextPostEvents"
+                    android:text="Lorem ipsum Lorem ipsum
+                                    Lorem ipsum Lorem ipsum
+                                     is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's sta
+                                      Lorem ipsum "/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:id="@+id/linearShowMoreData"
+    >
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearFundingResources"
+                android:orientation="vertical">
+
+
+
+        <com.ids.inpoint.custom.CustomTextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/font"
+                android:visibility="gone"
+                android:id="@+id/tvFundingTitle"
+                android:text="@string/funding"
+                android:layout_marginTop="@dimen/normal_margin"
+        />
+
+
+        <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/normal_margin"
+                android:id="@+id/rvFunding"
+                android:visibility="gone"
+
+        />
+
+
+        <com.ids.inpoint.custom.CustomTextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/font"
+                android:id="@+id/tvResourcesTitle"
+                android:text="@string/resources"
+                android:layout_marginTop="@dimen/normal_margin"
+        />
+
+
+        <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/normal_margin"
+                android:id="@+id/rvResources"
+
+        />
+
+
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="@dimen/normal_margin"
+                android:orientation="horizontal"
+
+        >
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/normal_margin"
+                    android:background="@drawable/rectangular_white"
+                    android:layout_marginRight="@dimen/mini_margin"
+                    android:layout_marginEnd="@dimen/mini_margin"
+                    android:paddingRight="@dimen/normal_margin"
+                    android:paddingTop="@dimen/mini_margin"
+                    android:paddingBottom="@dimen/mini_margin"
+            >
+                <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/date"
+                        android:layout_gravity="center_vertical"
+                />
+
+                <com.ids.inpoint.custom.CustomTextViewBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:text="Friday,31 May 2019"
+                        android:textSize="@dimen/font_small"
+                        android:id="@+id/tvEventDate"
+                        android:textColor="@color/primary"
+                        android:layout_marginLeft="@dimen/mini_margin"
+                        android:layout_marginStart="@dimen/mini_margin"
+                />
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/normal_margin"
+                    android:background="@drawable/rectangular_white"
+                    android:layout_marginLeft="@dimen/mini_margin"
+                    android:layout_marginStart="@dimen/mini_margin"
+                    android:paddingRight="@dimen/normal_margin"
+                    android:paddingTop="@dimen/mini_margin"
+                    android:paddingBottom="@dimen/mini_margin"
+            >
+                <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/durarion"
+                        android:layout_gravity="center_vertical"
+                />
+
+                <com.ids.inpoint.custom.CustomTextViewBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:text="Duration:00:46 min"
+                        android:id="@+id/tvEventTime"
+                        android:textColor="@color/primary"
+                        android:textSize="@dimen/font_small"
+                        android:layout_marginLeft="@dimen/mini_margin"
+                        android:layout_marginStart="@dimen/mini_margin"
+                />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="@dimen/normal_margin"
+                android:orientation="horizontal"
+
+        >
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/normal_margin"
+                    android:background="@drawable/rectangular_white"
+                    android:layout_marginRight="@dimen/mini_margin"
+                    android:layout_marginEnd="@dimen/mini_margin"
+                    android:paddingRight="@dimen/normal_margin"
+                    android:paddingTop="@dimen/mini_margin"
+                    android:paddingBottom="@dimen/mini_margin"
+            >
+                <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/date"
+                        android:layout_gravity="center_vertical"
+                />
+
+                <com.ids.inpoint.custom.CustomTextViewBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:id="@+id/tvEventLocation"
+                        android:text="Downtown, Beirut, Lebanon"
+                        android:textColor="@color/primary"
+                        android:textSize="@dimen/font_small"
+                        android:layout_marginLeft="@dimen/mini_margin"
+                        android:layout_marginStart="@dimen/mini_margin"
+                />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="40dp"
+                      android:background="@drawable/rectangular_secondary"
+                      android:layout_marginTop="@dimen/normal_margin"
+                      android:id="@+id/linearParticipate"
+                      android:layout_gravity="center"
+                      android:gravity="center"
+        >
+            <ImageView android:layout_width="20dp"
+                       android:layout_height="20dp"
+                       android:layout_gravity="center"
+                       android:src="@drawable/participate"
+            />
+
+            <com.ids.inpoint.custom.CustomTextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font"
+                    android:text="@string/participate"
+                    android:id="@+id/tvParticipate"
+                    android:layout_marginLeft="@dimen/normal_margin"
+                    android:layout_marginStart="@dimen/normal_margin"
+                    android:textColor="@color/white_trans"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+
+
+            />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

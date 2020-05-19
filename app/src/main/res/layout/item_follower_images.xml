@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             android:layout_width="40dp"
+                                             android:id="@+id/rlFollower"
+                                             android:layout_height="40dp">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/circle_border_white"
+
+    >
+
+        <ImageView
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:src="@drawable/profile"
+                android:id="@+id/ivFollower"
+
+        />
+
+    </LinearLayout>
+
+</RelativeLayout>

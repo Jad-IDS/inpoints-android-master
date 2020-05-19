@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+
+
+>
+
+    <include layout="@layout/toolbar"/>
+    <include layout="@layout/loading_trans"/>
+    <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/big_margin"
+                    android:layout_marginLeft="@dimen/second_margin"
+                    android:layout_marginRight="@dimen/second_margin"
+
+            >
+
+                <com.ids.inpoint.custom.CustomTextViewBold
+                        android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="@dimen/large_font"
+                        android:visibility="gone"
+                        android:text="E-learnig in moment that matter"
+                />
+
+                <com.ids.inpoint.custom.CustomTextViewMedium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/font"
+                        android:visibility="gone"
+                        android:layout_marginTop="@dimen/small_margin"
+                        android:text="Lorem ipsum dolor sit amet consectetur adipisting"
+                />
+
+
+                <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardElevation="2dp"
+                        android:background="@color/white"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        app:cardUseCompatPadding="true"
+                        android:padding="@dimen/normal_margin"
+                        android:layout_gravity="center"
+                        app:cardCornerRadius="2dp"
+
+
+                >
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                               android:orientation="vertical"
+                              android:padding="@dimen/normal_margin"
+                >
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal"
+
+                >
+
+
+
+
+                    <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textSize="@dimen/font"
+                            android:paddingStart="@dimen/second_margin"
+                            android:id="@+id/etSearch"
+                            android:paddingLeft="@dimen/second_margin"
+                            android:hint="@string/search_by_title_or_by_author_name"
+                            android:background="@color/gray_medium"
+
+                    />
+
+                    <LinearLayout android:layout_width="wrap_content"
+                                  android:layout_height="match_parent"
+                                  android:background="@color/gray_medium"
+                                  android:layout_gravity="center"
+                                  android:gravity="center"
+                                  android:id="@+id/btClear"
+                                  android:visibility="gone"
+                                  android:paddingLeft="@dimen/second_margin"
+                                  android:paddingRight="@dimen/second_margin"
+                    >
+                        <ImageView
+                                android:layout_width="12dp"
+                                android:layout_height="12dp"
+                                android:src="@drawable/close"
+
+                        />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:id="@+id/btSearch"
+                            android:gravity="center"
+                            android:background="@drawable/right_corners_secondary_filled"
+                    >
+
+                        <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/search"
+                                android:layout_gravity="center"
+                        />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/normal_margin"
+                >
+
+
+
+                    <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:id="@+id/linearSortCategory"
+                            android:background="@drawable/rectangular_gray"
+                            android:orientation="horizontal"
+                    >
+                        <com.ids.inpoint.custom.CustomTextViewMedium
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:id="@+id/tvSelectedSortCategory"
+                                android:textSize="@dimen/font"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:paddingStart="@dimen/second_margin"
+                                android:paddingLeft="@dimen/second_margin"
+                                android:hint="@string/sort_by_category"
+
+
+                        />
+
+                        <ImageView
+                                android:layout_width="12dp"
+                                android:layout_height="12dp"
+                                android:src="@drawable/arrow_down"
+                                android:layout_marginRight="@dimen/second_margin"
+                                android:layout_marginLeft="@dimen/second_margin"
+                        />
+                    </LinearLayout>
+                    <LinearLayout
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:background="@drawable/right_corners_secondary_filled"
+                    >
+
+                        <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:id="@+id/ivSearch"
+                                android:src="@drawable/filter_2"
+                                android:tint="@color/white"
+                                android:layout_gravity="center"
+                        />
+                    </LinearLayout>
+
+                </LinearLayout>
+                </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+
+
+
+                <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardElevation="2dp"
+                        android:background="@color/white"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="@dimen/big_margin"
+                        android:layout_marginRight="4dp"
+                        app:cardUseCompatPadding="true"
+                        android:padding="@dimen/normal_margin"
+                        android:layout_gravity="center"
+                        app:cardCornerRadius="2dp"
+
+
+                >
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                                  android:padding="@dimen/normal_margin"
+                    >
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+
+                >
+                    
+                    <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:id="@+id/btOnlineCourses"
+                            android:layout_height="wrap_content">
+
+                        <LinearLayout android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:orientation="vertical"
+                                      android:layout_gravity="center"
+                                      android:gravity="center"
+                        >
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:layout_height="wrap_content"
+                                      android:orientation="horizontal"
+                                      android:layout_gravity="center"
+                                      android:gravity="center"
+                        >
+                        <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:tint="@color/secondary"
+                                android:src="@drawable/ic_online_courses"
+                                android:id="@+id/ivOnlineCourses"
+
+                        />
+
+                        <com.ids.inpoint.custom.CustomTextViewMedium
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:textColor="@color/secondary"
+                                android:id="@+id/tvOnlineCourses"
+                                android:paddingStart="@dimen/normal_margin"
+                                android:paddingLeft="@dimen/normal_margin"
+                                android:text="@string/online_courses"
+                        />
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:id="@+id/selectedOnline"
+                                android:orientation="vertical"
+                                android:background="@color/secondary"
+                                android:layout_marginTop="@dimen/normal_margin"
+                        />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_gravity="center"
+                            android:id="@+id/btOnlinePublications"
+                            android:gravity="center"
+                            android:layout_height="wrap_content">
+
+                        <LinearLayout android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:orientation="vertical"
+                                      android:layout_gravity="center"
+                                      android:gravity="center"
+                        >
+                            <LinearLayout android:layout_width="match_parent"
+                                          android:layout_height="wrap_content"
+                                          android:orientation="horizontal"
+                                          android:layout_gravity="center"
+                                          android:gravity="center"
+                            >
+                                <ImageView
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:src="@drawable/ic_publication"
+                                        android:id="@+id/ivPublication"
+
+                                />
+
+                                <com.ids.inpoint.custom.CustomTextViewMedium
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:gravity=""
+                                        android:textColor="@color/gray_dark"
+                                        android:id="@+id/tvPublications"
+                                        android:paddingStart="@dimen/normal_margin"
+                                        android:paddingLeft="@dimen/normal_margin"
+                                        android:text="@string/publications"
+                                />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:id="@+id/selectedPublication"
+                                    android:visibility="invisible"
+                                    android:orientation="vertical"
+                                    android:background="@color/secondary"
+                                    android:layout_marginTop="@dimen/normal_margin"
+                            />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                
+
+                <android.support.v7.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rvElearning"
+                        android:descendantFocusability="beforeDescendants"
+                        android:nestedScrollingEnabled="false"
+                        android:layout_marginTop="@dimen/normal_margin"
+                        android:paddingBottom="@dimen/second_margin"
+                />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+            >
+                <android.support.v7.widget.RecyclerView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:id="@+id/rvCategory"
+                        android:visibility="gone"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:layout_marginTop="120dp"
+                        android:layout_marginLeft="@dimen/second_margin"
+                        android:layout_marginStart="@dimen/second_margin"
+                        android:paddingBottom="@dimen/second_margin"
+                />
+                <View
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"/>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

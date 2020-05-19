@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:id="@+id/bottom_sheet_layout"
+             android:layout_width="match_parent"
+             android:layout_height="500dp"
+              android:paddingTop="@dimen/second_margin"
+              android:paddingBottom="@dimen/mini_margin"
+              android:paddingRight="@dimen/second_margin"
+              android:paddingLeft="@dimen/second_margin"
+
+             android:orientation="vertical"
+             android:background="@color/white"
+             android:clipToPadding="true"
+             app:behavior_hideable="true"
+             app:behavior_peekHeight="350dp"
+             app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+<RelativeLayout android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rvComments"
+            android:paddingBottom="40dp"
+
+
+    />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/normal_margin"
+            android:id="@+id/linearWriteComment"
+
+    >
+        <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/photo"
+                android:id="@+id/ivPhoto"
+
+        />
+
+        <EditText
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:id="@+id/etComment"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/rounded_corner_gray"
+                android:hint="@string/write_a_comment"
+                android:paddingLeft="@dimen/normal_margin"
+                android:paddingStart="@dimen/normal_margin"
+        />
+
+
+        <ImageView android:layout_width="30dp"
+                   android:layout_height="30dp"
+                   android:src="@drawable/send"
+                   android:id="@+id/ivSend"
+                   android:layout_gravity="center_vertical"
+                   android:layout_marginLeft="@dimen/normal_margin"
+                   android:layout_marginRight="@dimen/normal_margin"
+        />
+    </LinearLayout>
+</RelativeLayout>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+
+>
+
+
+
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:paddingTop="@dimen/big_margin"
+                  android:paddingRight="@dimen/normal_margin"
+                  android:paddingLeft="@dimen/normal_margin"
+                  android:background="@color/white"
+                  android:paddingBottom="@dimen/big_margin"
+                  android:orientation="vertical"
+    >
+        <com.ids.inpoint.custom.CustomTextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/select_category"
+                android:id="@+id/tvSelectTitle"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/font"
+        />
+
+        <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+
+                android:id="@+id/rvVerifyCategories"
+                android:layout_marginTop="@dimen/big_margin"
+        />
+
+
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="40dp"
+                      android:background="@drawable/rectangular_secondary"
+                      android:layout_marginTop="@dimen/normal_margin"
+                      android:paddingLeft="30dp"
+                      android:paddingRight="30dp"
+                      android:id="@+id/btVerify"
+                      android:layout_gravity="center"
+                      android:gravity="center"
+        >
+
+
+            <com.ids.inpoint.custom.CustomTextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font"
+                    android:text="@string/verify"
+                    android:id="@+id/tvSubmit"
+                    android:textColor="@color/white_trans"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+
+
+            />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/loading"/>
+</RelativeLayout>
+
+
+
+
+
+</LinearLayout>
